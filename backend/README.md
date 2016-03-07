@@ -1,6 +1,6 @@
 ## Desafio para Backend Sofware Engineer 
 
-Você está revisando as decisões de design de um software que processa Pedidos online. Por estes pedidos, são realizados pagamentos cujos
+Você está revisando as decisões de design de um software que processa Pedidos online. Por estes pedidos, são realizados pagamentos que
 recebem tratamentos a depender as situações específicas de cada um como segue:
 
   - Se o pagamento for para um item físico, você deverá gerar um `shipping label` para o mesmo ser colocado na caixa do envio;
@@ -37,3 +37,11 @@ Estima-se 1h30 para este desafio, entretanto não há um limite.
 __Apresentação__
   - Código protótipo
   - Explicação da solução (em arquivo separado em Markdown/Plain Text)
+
+__Avaliação__
+
+Para nos enviar seu código, você pode:
+
+* Fazer um fork desse repositório, e nos mandar uma pull-request.
+* Nos dar acesso a um repositório privado seu (github, bitbucket, gitlab...) e nos avisar.
+* Nos enviar um git bundle do seu repositório para o e-mail challenge@bankfacil.com.br
