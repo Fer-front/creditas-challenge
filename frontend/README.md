@@ -29,4 +29,4 @@ grandes modificações.
 Para nos enviar seu código, você pode:
 * Fazer um fork desse repositório, e nos mandar uma pull-request
 * Nos dar acesso a um repositório privado seu (github, bitbucket, gitlab...)
-* Nos enviar um `git bundle` do seu repositório via e-mail
+* Nos enviar um `git bundle` do seu repositório para o e-mail challenge@bankfacil.com.br
