@@ -69,4 +69,10 @@ RESPONSE:
 
 **Você será o responsável por criar esse aplicativo ou uma parte dele, o objetivo é usar as melhores práticas de desenvolvimento as quais você conhece, fazendo a integração com a API da empresa. Sinta-se a vontade para usar qualquer biblioteca que seja válida para a melhor execução do seu trabalho.**
 
+Para nos enviar seu código, você pode:
+
+Fazer um fork desse repositório, e nos mandar uma pull-request.
+Nos dar acesso a um repositório privado seu (github, bitbucket, gitlab...) e nos avisar.
+Nos enviar um git bundle do seu repositório para o e-mail challenge@bankfacil.com.br
+
 Boa sorte!
