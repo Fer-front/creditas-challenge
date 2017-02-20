@@ -1,4 +1,4 @@
-## Teste frontend - Bankfacil
+## Teste frontend - Creditas
 
 Esse é um teste focado em design de código, e conhecimento de orientação a 
 objeto. O objetivo é avaliar sua experiênica em escrever código de fácil 
@@ -29,4 +29,4 @@ grandes modificações.
 Para nos enviar seu código, você pode:
 * Fazer um fork desse repositório, e nos mandar uma pull-request
 * Nos dar acesso a um repositório privado seu (github, bitbucket, gitlab...)
-* Nos enviar um `git bundle` do seu repositório para o e-mail challenge@bankfacil.com.br
+* Nos enviar um `git bundle` do seu repositório para o e-mail challenge@creditas.com.br
