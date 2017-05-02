@@ -15,7 +15,7 @@ Crie as classes, métodos e suas respectivas chamadas para que recebendo um _inp
 
 **Não é necessário** criar as implementações para envio de e-mails, imprimir o _shipping label_, etc. Para estes casos (email, shipping label) crie apenas as chamadas de métodos, para indicar que ali seria o local aonde o envio ocorreria.
 
-Como a proposta **não requer um código final funcionando**, não há a necessidade de implementar os testes de unidade. Entretanto, levaremos isso como _bonus points_.
+Como a proposta **não requer um código final funcionando**, não há a necessidade de implementar os testes de unidade. Entretanto, levaremos isso como _bonus points_. É permitido o uso de libs para facilitar a implementação dos testes.
 
 __O que está sob avaliação?__
 
