@@ -1,6 +1,6 @@
 # Desafio Data Science
 
-## Objetivo:
+## Objetivo
  - Implementar um sistema que retorne a probabilidade que um cliente tem de ser enviado para análise de crédito dado que ele foi pré-aprovado para o empréstimo com garantia de automóvel.
 
 ## Tarefa
@@ -16,3 +16,8 @@
  - Alguns dados estão faltando. Faz parte do exercício entender como que os dados faltantes serão tratados (ou justificar se não o serão).
  - Você poderá usar dados externos, desde que explique **detalhadamente** quais dados usou e como o fez.
  - Não há um limite fixo de tempo, porém é estimada que uma semana é mais que o suficiente para para resolver o problema.
+
+## Avaliação
+Para nos enviar seu código, você pode:
+- Dar acesso ao seu repositório privado no Bitbucket para `allandieguez` e `bahbbc`.
+- Fazer um fork desse repositório e nos mandar uma pull-request.
