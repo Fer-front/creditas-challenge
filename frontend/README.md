@@ -27,6 +27,6 @@ grandes modificações.
 ### Avaliação
 
 Para nos enviar seu código, você pode:
-* Fazer um fork desse repositório, e nos mandar uma pull-request
-* Nos dar acesso a um repositório privado seu (github, bitbucket, gitlab...)
-* Nos enviar um `git bundle` do seu repositório para o e-mail challenge@creditas.com.br
+* Fazer um fork desse repositório e nos mandar uma pull-request
+* Dar acesso ao seu repositório privado no [Github](http://github.com) ou [Gitlab](http://gitlab.com) para `renato-zannon` e `matheuspoleza`.
+* Enviar um `git bundle` do seu repositório para o e-mail challenge@creditas.com.br
