@@ -25,4 +25,4 @@
 ## Avaliação
 Para nos enviar seu código, você pode:
 - Dar acesso ao seu repositório privado no Bitbucket para `allandieguez` e `bahbbc`.
-- Fazer um fork desse repositório e nos mandar uma pull-request.
+- Mandar um email para `barbara.barbosa@creditas.com.br` e `allan.dieguez@creditas.com.br`
