@@ -19,21 +19,21 @@ Since the proposal does not require a working final code , there is no need to i
 
 __What is under evaluation?__
 
-ne’s ability to analyze, design and code a solution by guiding oneself with **Object Oriented Design** e **Object Guiding Principles** (<-this probably needs improved translation).
+One’s ability to analyze, design and code a solution by guiding oneself with **Object Oriented Design** and **Object Guiding Principles** (<-this probably needs improved translation).
 
 Feel free to modify / refactor the file bootstrap.rb if you feel it is necessary.
 
-Please include your activity considerations in a text file or markdown.
+Please describe your modifications and reasoning in a separate text file or markdown.
 
 __What we don't want__
- - Frameworks :] (aliás, nem precisa)
- - Metaprogramação
+ - Frameworks :] (you don't need to use any)
+ - Metaprogramming
 
 __What language?__
 Ruby.
 
 __Time__
-It is estimated 1h30 for this challenge, however there is no limit.
+It should take you about 1h30 to complete this challenge, however you can take as long as you like.
 
 __Presentation__
   - Code
