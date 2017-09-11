@@ -23,7 +23,7 @@ As gems que você irá utilizar ficam a seu critério, mas vale mais pontos usar
 
 ### 1. Especificação
 
-O Login do site da Creditas está sendo criado agora e o time de desenvolvimento precisa entender melhor como deve funcionar para que possam desenvolver com assertividade. Sua missão é escrever os cenários de funcionamento dessa funcionalidade para guiar o desenvolvimento.
+O Login do site da Creditas está sendo criado agora e o time de desenvolvimento precisa entender melhor como deve funcionar para que possam desenvolver com assertividade. Sua missão é escrever os cenários dessa funcionalidade para guiar o desenvolvimento.
 
 ![Login Page](login_creditas.png)
 
@@ -69,4 +69,4 @@ Crie um teste que cria um post através da API. Valide que o post foi criado atr
 Para nos enviar seu código, você pode:
 
 * Fazer um fork desse repositório, e nos mandar uma pull-request.
-* Dar acesso ao seu repositório privado no GitHub para karolxavierleite.
+* Dar acesso ao seu repositório privado no GitHub ou GitLab para karolxavierleite.
