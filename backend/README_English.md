@@ -30,7 +30,7 @@ __What we don't want__
  - Metaprogramming
 
 __What language?__
-Ruby.
+Ruby or Python
 
 __Time__
 It should take you about 1h30 to complete this challenge, however you can take as long as you like.
