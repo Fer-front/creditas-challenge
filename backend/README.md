@@ -21,7 +21,7 @@ __O que está sob avaliação?__
 
 Sua capacidade de analisar, projetar e codificar uma solução guiando-se com **Design Orientado a Objetos** e **Princípios de Orientação a Objetos**.
 
-Sinta-se à vontade para modificar/refatorar o arquivo `bootstrap.rb` caso julgue necessário.
+Sinta-se à vontade para modificar/refatorar o arquivo `bootstrap` caso julgue necessário.
 
 Por favor, inclua suas considerações da atividade em um arquivo de texto ou markdown.
 
@@ -30,7 +30,7 @@ __O que não vale?__
  - Metaprogramação
 
 __Qual linguagem?__
-Ruby.
+Ruby ou Python
 
 __Tempo__
 Estima-se 1h30 para este desafio, entretanto não há um limite.
@@ -44,4 +44,4 @@ __Avaliação__
 Para nos enviar seu código, você pode:
 
  - Fazer um fork desse repositório, e nos mandar uma pull-request.
- - Dar acesso ao seu repositório privado no [Gitlab](http://gitlab.com) para `camilacampos`, `juliabirkett`, `RafaelFerraro`, `RenanZll` e `eduardodiniz`.
+ - Dar acesso ao seu repositório privado no [Gitlab](http://gitlab.com) para `aureliosaraiva`, `camilacampos`, `juliabirkett`, `RafaelFerraro`, `RenanZll` e `eduardodiniz`.
