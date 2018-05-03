@@ -33,7 +33,7 @@ __Qual linguagem?__
 Ruby ou Python
 
 __Tempo__
-Estima-se 1h30 para este desafio, entretanto não há um limite.
+Estima-se 4 a 8 horas para este desafio, entretanto não há um limite.
 
 __Apresentação__
   - Código
