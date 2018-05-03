@@ -44,4 +44,4 @@ __Avaliação__
 Para nos enviar seu código, você pode:
 
  - Fazer um fork desse repositório, e nos mandar uma pull-request.
- - Dar acesso ao seu repositório privado no [Gitlab](http://gitlab.com) para `aureliosaraiva`, `camilacampos`, `juliabirkett`, `RafaelFerraro`, `RenanZll`, `fabriciorissetto` e `robsoncastilho`.
+ - Dar acesso ao seu repositório privado no [Gitlab](http://gitlab.com) para `aureliosaraiva`, `camilacampos`, `LuizHAssuncao`, `RafaelFerraro`, `RenanZll`, `fabriciorissetto` e `robsoncastilho`.
