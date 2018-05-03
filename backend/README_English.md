@@ -33,7 +33,7 @@ __What language?__
 Ruby or Python
 
 __Time__
-It should take you about 1h30 to complete this challenge, however you can take as long as you like.
+It should take you between 4 to 8 hours to complete this challenge, however you can take as long as you like.
 
 __Presentation__
   - Code
