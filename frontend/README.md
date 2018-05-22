@@ -28,5 +28,5 @@ grandes modificações.
 
 Para nos enviar seu código, você pode:
 * Fazer um fork desse repositório e nos mandar uma pull-request
-* Dar acesso ao seu repositório privado no [Github](http://github.com) ou [Gitlab](http://gitlab.com) para `creditaschallengen`.
+* Dar acesso ao seu repositório privado no [Github](http://github.com) ou [Gitlab](http://gitlab.com) para `creditaschallenge`.
 * Enviar um `git bundle` do seu repositório para o e-mail challenge@creditas.com.br
