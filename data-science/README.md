@@ -24,5 +24,5 @@
 
 ## Avaliação
 Para nos enviar seu código, você pode:
-- Dar acesso ao seu repositório privado no Bitbucket para `allandieguez` e `bahbbc`.
+- Dar acesso ao seu repositório privado no Bitbucket para `creditaschallenge`.
 - Mandar um email para `barbara.barbosa@creditas.com.br` e `allan.dieguez@creditas.com.br`
