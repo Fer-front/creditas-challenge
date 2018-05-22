@@ -69,4 +69,4 @@ Crie um teste que cria um post através da API. Valide que o post foi criado atr
 Para nos enviar seu código, você pode:
 
 * Fazer um fork desse repositório, e nos mandar uma pull-request.
-* Dar acesso ao seu repositório privado no GitHub ou GitLab para karolxavierleite.
+* Dar acesso ao seu repositório privado no GitHub ou GitLab para `creditaschallenge`.
