@@ -11,7 +11,7 @@ __O que é necessário fazer?__
 
 Você ficou designado a prototipar como poderá ser feita a nova versão deste fluxo de pagamento/regras de envio, pois a versão atual é frágil, **encadeada em if/else, switch/case**, exigindo modificações grandes a cada nova regra de envio/processamento inserida ou removida.
 
-Crie as classes, métodos e suas respectivas chamadas para que recebendo um _input_ (`Pagamento` ou `Order` - fica a seu critério), você consiga tratar os cenários acima.
+Crie as classes, métodos e suas respectivas chamadas (a seu critério) para que você consiga tratar os cenários acima.
 
 **Não é necessário** criar as implementações para envio de e-mails, imprimir o _shipping label_, etc. Para estes casos (email, shipping label) crie apenas as chamadas de métodos, para indicar que ali seria o local aonde o envio ocorreria.
 
@@ -21,16 +21,16 @@ __O que está sob avaliação?__
 
 Sua capacidade de analisar, projetar e codificar uma solução guiando-se com **Design Orientado a Objetos** e **Princípios de Orientação a Objetos**.
 
-Sinta-se à vontade para modificar/refatorar o arquivo `bootstrap` caso julgue necessário.
+Sinta-se à vontade para modificar/refatorar quaisquer aspectos das classes/métodos do arquivo `bootstrap` caso julgue necessário.
 
 Por favor, inclua suas considerações da atividade em um arquivo de texto ou markdown.
 
 __O que não vale?__
  - Frameworks :] (aliás, nem precisa)
- - Metaprogramação
+ - Metaprogramação/Reflection
 
 __Qual linguagem?__
-Ruby ou Python
+Ruby, Python ou Kotlin
 
 __Tempo__
 Estima-se 4 a 8 horas para este desafio, entretanto não há um limite.
