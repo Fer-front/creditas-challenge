@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Challenge Creditas</title>
-    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <div class="container">
@@ -26,8 +25,8 @@
             <div class="form__fields">
               <div class="field-group">
                 <div class="field">
-                  <label for="parcela">Número de parcelas</label>
-                  <select name="parcela" id="parcela">
+                  <label for="parcelas">Número de parcelas</label>
+                  <select name="parcelas" id="parcelas" required>
                     <option value="24">24</option>
                     <option value="36">36</option>
                     <option value="48">48</option>
@@ -35,7 +34,7 @@
                 </div>
                 <div class="field">
                   <label for="garantia">Garantia</label>
-                  <select name="garantia" id="garantia">
+                  <select name="garantia" id="garantia" required>
                     <option value="veiculo">Veículo</option>
                     <option value="imovel">Imóvel</option>
                   </select>
@@ -45,7 +44,7 @@
                 <div class="field-group">
                   <div class="field">
                     <label for="valor-garantia">Valor da Garantia</label>
-                    <input type="text" name="valor-garantia" id="valor-garantia">
+                    <input type="text" required name="valor-garantia" id="valor-garantia">
                   </div>
                   <div class="field">
                     <div class="range">
@@ -62,7 +61,7 @@
                 <div class="field-group">
                   <div class="field">
                     <label for="valor-emprestimo">Valor do Empréstimo</label>
-                    <input type="text" name="valor-emprestimo" id="valor-emprestimo">
+                    <input type="text" required name="valor-emprestimo" id="valor-emprestimo">
                   </div>
                   <div class="field">
                     <div class="range">
@@ -101,6 +100,5 @@
         <footer class="footer">*Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere quas non harum dolor eligendi id, ab corrupti blanditiis suscipit ex odit error alias minus. Enim dolores eum officiis quae rem!*</footer>
       </main>
     </div>
-    <script src="index.js"></script>
   </body>
 </html>

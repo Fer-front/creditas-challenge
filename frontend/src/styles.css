@@ -58,7 +58,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: calc(100% - 190px);
+  height: calc(100% - 80px);
   padding: 0 10px;
 }
 
@@ -96,6 +96,14 @@ body {
   font-weight: bold;
   font-size: .8rem;
   margin-bottom: 5px;
+}
+
+.field select {
+  border:none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -ms-appearance: none;
 }
 
 .field select, .field input[type="text"] {
