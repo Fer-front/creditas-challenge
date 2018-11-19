@@ -1,12 +1,26 @@
-import {
-  getByLabelText,
-  getByText,
-  getByTestId,
-  queryByTestId,
-  wait,
-  fireEvent
-} from 'dom-testing-library'
-import 'jest-dom/extend-expect'
+/* <!--
+  =========================================================
+  Que tal aumentar o coverage para que ele comece a passar
+  nos critérios do desafio?
+
+  Objetivo: Alcançar 80% de cobertura, mas não se preocupe
+  se não chegar a alcançar a objetivo, faça o quanto você
+  acha que é necessário para garantir segurança quando um
+  outro amigo for mexer no mesmo código que você :)
+
+  Confira nossas taxas de coberturas atuais :(
+
+  ----------|----------|----------|----------|----------|-------------------|
+  File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
+  ----------|----------|----------|----------|----------|-------------------|
+  All files |    15.79 |        0 |     9.52 |    14.29 |                   |
+  index.js  |    15.79 |        0 |     9.52 |    14.29 |... 72,76,78,83,91 |
+  ----------|----------|----------|----------|----------|-------------------|
+  Jest: Uncovered count for statements (32)exceeds global threshold (10)
+  Jest: "global" coverage threshold for branches (80%) not met: 0%
+  Jest: "global" coverage threshold for lines (80%) not met: 14.29%
+  Jest: "global" coverage threshold for functions (80%) not met: 9.52%
+--> */
 
 import CreditasChallenge, {
   checkFormValidity,

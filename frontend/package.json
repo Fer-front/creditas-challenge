@@ -42,6 +42,14 @@
     "clearMocks": true,
     "collectCoverage": true,
     "testEnvironment": "jest-environment-jsdom",
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80,
+        "statements": -10
+      }
+    },
     "testMatch": [
       "**/__tests__/**/*.js?(x)",
       "**/?(*.)+(spec|test).js?(x)"

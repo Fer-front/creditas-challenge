@@ -1,3 +1,15 @@
+/* <!--
+  =========================================================
+  Objetivo melhorar a legibilidade
+
+  Atualmente este arquivo possui muitos métodos o que
+  dificulta a legibilidade, é interessante que cada
+  responsabilidade esteja separada e isolada para tornar a
+  manutenção mais simples e legível para próxima pessoa
+  que for ler o código.
+  =========================================================
+--> */
+
 import './styles.css'
 
 export const checkFormValidity = formElement => formElement.checkValidity()
@@ -10,10 +22,29 @@ export const getFormValues = formElement =>
       value: element.value
     }))
 
-export const toStringFormValues = values =>
-  `Confirmação\n${values
+export const toStringFormValues = values => {
+  /* <!--
+    =========================================================
+    Objetivo serapação de responsabilidades
+
+    Atualmente este método possui muitas responsabilidades,
+    se você reparar este célculo será utilizado em outros
+    lugares.
+    =========================================================
+  --> */
+
+  const match = matchString => value => value.field === matchString
+  const IOF = 6.38 / 100
+  const INTEREST_RATE = 2.34 / 100
+  const TIME = values.find(match('parcelas')).value / 1000
+  const VEHICLE_LOAN_AMOUNT = values.find(match('valor-emprestimo')).value
+
+  return `Confirmação\n${values
     .map(value => `Campo: ${value.field}, Valor: ${value.value}`)
-    .join('\n')}`
+    .join('\n')}`.concat(
+    `\nTotal ${(IOF + INTEREST_RATE + TIME + 1) * VEHICLE_LOAN_AMOUNT}`
+  )
+}
 
 export function Send (values) {
   return new Promise((resolve, reject) => {
@@ -36,6 +67,28 @@ export function Submit (formElement) {
   })
 }
 
+export function handleChangeRangeVehicleUnderWarranty (
+  warrantyRangeElement,
+  vehicleWarrantyElement
+) {
+  const MIN_VALUE = 12000.0
+  warrantyRangeElement.addEventListener('change', function (event) {
+    vehicleWarrantyElement.value =
+      (Number(MIN_VALUE) * Number(event.target.value)) / 100 + Number(MIN_VALUE)
+  })
+}
+
+export function handleChangeVehicleLoanAmount (
+  loanAmountRangeElement,
+  loanAmountElement
+) {
+  const MIN_VALUE = 30000.0
+  loanAmountRangeElement.addEventListener('change', function (event) {
+    loanAmountElement.value =
+      (Number(MIN_VALUE) * Number(event.target.value)) / 100 + Number(MIN_VALUE)
+  })
+}
+
 export default class CreditasChallenge {
   static initialize () {
     this.registerEvents()
@@ -43,6 +96,16 @@ export default class CreditasChallenge {
 
   static registerEvents () {
     Submit(document.querySelector('.form'))
+
+    handleChangeRangeVehicleUnderWarranty(
+      document.getElementById('valor-garantia-range'),
+      document.getElementById('valor-garantia')
+    )
+
+    handleChangeVehicleLoanAmount(
+      document.getElementById('valor-emprestimo-range'),
+      document.getElementById('valor-emprestimo')
+    )
   }
 }
 
