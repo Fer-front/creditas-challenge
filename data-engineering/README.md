@@ -6,7 +6,7 @@ This challenge is intended to evaluate your understanding of the data engineerin
 
 ### Data Modeling
 
-You must have received a file named *datasets.tar.gz* along with this PDF. In this file you will find the files described below:
+There is a file named *datasets.tar.gz* along with this description. In this file you will find the files described below:
 
 - `dca_dataset_loan_transactions.jsonl`:
     - This dataset is the complete list of all private loans made under USAID's DCA since it was established in 1999;
@@ -21,17 +21,17 @@ You must have received a file named *datasets.tar.gz* along with this PDF. In th
     - Dollar based conversion rates for world currencies from 1950 to 2017;
     - See more at *[https://data.oecd.org/conversion/exchange-rates.htm](https://data.oecd.org/conversion/exchange-rates.htm)*.
 
-From the datasets above, the first two represent loans and guarantees USAID has issued since 1999, the third contains HDI indices and the fourth conversion rates across the globe. You must ingest this data into a PostgreSQL "data warehouse".
+From the datasets above, the first two represent loans and guarantees USAID has issued since 1999, the third contains HDI indices and the fourth conversion rates across the globe. You must ingest this data into a PostgreSQL "data warehouse" (a Redshift simulation).
 
 Create the tables you judge necessary and use the types and constraints best suitable for each pair.
 
 ### Data Processing
 
-If you take a look at the dataset, you will see the data are not entirely normalized. Use the tool(s) you judge the best to solve the problem, but no overkill solutions (althought we suggest involving some Python here).
+If you take a look at the dataset, you will notice the data are not entirely "normalized". Use the tool(s) of your choice to solve the problem, but no overkill solutions (althought we suggest involving some Python here).
 
 ### Data Recovery
 
-It is not expected too fancy analyses, but we are expecting that you may provide some insights about this data you just modeled into tables and had some effort to process. Although this challenge is aimed for data engineering, your most common client will be a data analyst. SQL is a good tool to use. Some questions we would like answered are:
+It is not expected too fancy analyses, but we are expecting that you may provide some insights about this data you just modeled into tables and had so much effort to process. Although this challenge is aimed for data engineering, your most common client will be a data analyst. SQL is a good tool to use (of course, since I told you to use a PostgreSQL...). Some questions we would like answered are:
 
 *The HDI dataset shows the evolution from 1980 to 2013. It surely involves economy. Is it possible to make a correlation between a country/continent movement on the HDI index and the loans received through time?*
 
@@ -45,8 +45,8 @@ Can you discover more interesting relations?
 
 - We use git;
 - Your solution may be tested in a cloud environment (well... we use AWS for a matter of fact);
-- Fancy patterns are not what we're going after, but some understanding of OOP principles would be nice;
-- Please, do some level of automated deployment (even if it just involves some bash script creating a package with the needed files).
+- Fancy patterns are not what we're going after, but some understanding of OOP principles would be nice (we're devs);
+- Please, do some level of automated deployment (even if it just involves some bash script creating a package with the files needed to run your application).
 
 ## Extras
 
