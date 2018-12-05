@@ -12,7 +12,7 @@ Você deverá implementar algumas funcionalidades para uma calculadora de simula
 A interface está previamente definida, assim como os estilos.
 
 Sinta-se à vontade para componentizar o que achar que deve ser componentizado. 
-Só gostariamos que o teste fosse realizado com Javascrip puro, nosso querido vanila. O que acha de encarar o desafio? 
+Só gostariamos que o teste fosse realizado com Javascript puro, nosso querido vanilla. O que acha de encarar o desafio? 
 
 ### Caso de uso
 
@@ -63,7 +63,7 @@ Por fim, você deve exibir o valor da parcela no campo correspondente a cada mud
 
 Atualmente, o arquivo `index.js` possui muitas funções, o que dificulta a legibilidade. Se você reparar, partes delas podem ser utilizadas em múltiplos lugares. Esperamos que você organize seu código seguindo algum modelo de sua escolha. Leve em consideração a possibilidade de adicionar e/ou remover regras e produtos. Imagine que este código é parte de um projeto a longo prazo da empresa. Esperamos que cada responsabilidade esteja separada e isolada, para tornar a manutenção mais simples para toda a equipe de desenvolvimento.
 
-## Desnvolvimento
+## Desenvolvimento
 
 ### Construído com
 Este projeto possui algumas bibliotecas para nos auxiliar nos testes e rodar a aplicação, são eles: Webpack, Babel, Jest e Eslint
@@ -73,7 +73,7 @@ Você precisa minimamente do [NodeJs](https://nodejs.org/en/) instalado para rod
 
 ### Configurações para rodar o ambiente
 
-Você precisa conhecer um pouco sobre o Git, que é uma ferramente que nos ajudar a fazer o controle de versão dos nossos arquivos.
+Você precisa conhecer um pouco sobre o Git, que é uma ferramenta que nos ajuda a fazer o controle de versão dos nossos arquivos.
 
 ```shell
 git clone https://github.com/Creditas/challenge.git
@@ -86,7 +86,7 @@ Se tudo estiver ok, acesse a url [http://localhost:3000/](http://localhost:3000/
 
 ## Tests
 
-Para rodar os testes roda o comando abaixo:
+Para rodar os testes é necessário executar o comando abaixo:
 
 ```shell
 npm test
