@@ -1,15 +1,3 @@
-/* <!--
-  =========================================================
-  Objetivo melhorar a legibilidade
-
-  Atualmente este arquivo possui muitos estilos o que
-  dificulta a legibilidade, é interessante que se faça
-  uma boa arganização dos estilos que seja separada e isolada,
-  para tornar a manutenção mais simples e legível para
-  próxima pessoa que for ler o código.
-  =========================================================
---> */
-
 :root {
   --mountain-meadow: #1eb98a;
   --green-yellow: #bcf236;
