@@ -10,11 +10,11 @@
  #### Você deve:
 
  - Escrever uma defesa para sua solução, descrevendo **DETALHADAMENTE** todas as etapas utilizadas para resolver o problema: a conceptualização, como realizou as descobertas, as técnicas/algoritmos utilizados e as soluções para cada um dos problemas encontrados. É necessário detalhar/justificar com *gráficos* e *tabelas* as descobertas.
- Você deve fazer isso em um arquivo separado, no formato `.pdf`, `.md` ou `.txt`.
+ Você deve fazer isso em um arquivo separado, no formato `.pdf`, `.md` ou `.txt`. Atenção! O relatório não deve ultrapassar 5 páginas.
  - Mandar a sua solução em código R ou Python. O uso de bibiliotecas é livre, mas você deve ser capaz de explicar o conceito dos algoritmos utilizados, ou seja, como eles funcionam e porque os escolheu para uso.
  - Utilizar a descrição dos dados está no arquivo `description.csv`.
  - Além do desenvolvimento da solução é necessário mostrar métricas de avaliação da solução desenvolvida. É necessário apresentar a matriz de confusão do/s modelo/s desenvolvidos, além de outras métricas de avaliação. Pontos extras para o uso de KS e/ou AUC. Além das métricas é necessário enviar a avaliação dos atributos do modelo e uma possível explicação para o porque o modelo apresentado é bom.
- - Enviar o modelo final para que seja possível testá-lo com um novo conjunto de dados. Para isso não deve ser necessário que rodemos todos o seu código, queremos apenas o modelo final escolhido, caso você tenha feito mais de um.
+ - Enviar o modelo final para que seja possível testá-lo com um novo conjunto de dados. Para isso você deve garantir que o seu código seja reproduzível e explicar como deveremos rodá-lo no relatório.
 
 ### Atenção
  - Os dados não estão normalizados. O cliente pode ter preenchido valores incomuns em alguns campos, como a renda.
@@ -25,4 +25,4 @@
 ## Avaliação
 Para nos enviar seu código, você pode:
 - Dar acesso ao seu repositório privado no Bitbucket para `creditaschallenge`.
-- Mandar um email para `barbara.barbosa@creditas.com.br` e `allan.dieguez@creditas.com.br`
+- Mandar um email para `ds-quad@creditas.com.br`
