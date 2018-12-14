@@ -10,7 +10,7 @@
 - A descrição dos dados está no arquivo `description.csv`.
 - Nesta base estão todos os clientes que entraram no site, mesmo aqueles que não foram pré-aprovados, sendo necessário filtrar os clientes válidos.
 
- #### Você deve:
+ ## Você deve
 
  - Escrever uma defesa para sua solução, descrevendo **DETALHADAMENTE** todas as etapas utilizadas para resolver o problema: a conceptualização, como realizou as descobertas, as técnicas/algoritmos utilizados e as soluções para cada um dos problemas encontrados. É necessário detalhar/justificar com *gráficos* e *tabelas* as descobertas.
  Você deve fazer isso em um arquivo separado, no formato `.pdf`, `.md` ou `.txt`. Atenção! O relatório não deve ultrapassar 5 páginas.
