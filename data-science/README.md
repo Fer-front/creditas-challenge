@@ -1,13 +1,14 @@
 # Desafio Data Science
 
 ## Objetivo
- Implementar um modelo que retorne a probabilidade que um cliente tem de ser enviado para análise de crédito dado que ele foi pré-aprovado para o empréstimo com garantia de automóvel. Além da implementação do modelo é esperado que o candidato faça a avaliação do mesmo, de maneira a entender o motivo pelo qual o modelo apresentado resolve o problema, incluindo quais atributos são mais importantes para o modelo e o motivo.
+- Implementar um modelo que retorne a probabilidade que um cliente tem de ser enviado para análise de crédito dado que ele foi pré-aprovado para o empréstimo com garantia de automóvel. 
+- Além da implementação do modelo é esperado que o candidato faça a **avaliação** do mesmo, de maneira a entender o motivo pelo qual o modelo apresentado resolve o problema, incluindo quais atributos são mais importantes para o modelo e o motivo.
+- É necessário apresentar também a **análise exploratória dos dados**, incluindo as variáveis que foram eliminadas e os motivos.
 
- Usando o dataset disponível no arquivo `dataset.csv`, implemente uma solução para calcular a probabilidade do cliente passar para próxima fase (enviado para análise de crédito).
- Nesta base estão todos os clientes que entraram no site, mesmo aqueles que não foram pré-aprovados, sendo necessário filtrar os clientes válidos.
- 
- A descrição dos dados está no arquivo `description.csv`.
- É necessário apresentar também a análise exploratória dos dados, incluindo as variáveis que você eliminou e os motivos.
+## Dataset
+- Todos os dados necessários para modelagem estão no arquivo `dataset.csv`.
+- A descrição dos dados está no arquivo `description.csv`.
+- Nesta base estão todos os clientes que entraram no site, mesmo aqueles que não foram pré-aprovados, sendo necessário filtrar os clientes válidos.
 
  #### Você deve:
 
