@@ -1,7 +1,7 @@
 <img src="https://www.creditas.com.br/static/images/logo-creditas-color-8367919c2a.svg" width="400">
 
 # Challenge Frontend - Creditas
-> Esse é um teste focado em design de código e conhecimento de orientação a objeto e design patterns em JavaScript. O objetivo é avaliar sua experiência em escrever código de fácil manutenção, baixo acoplamento e alta coesão.
+Esse é um teste de nivelamento. Queremos deixar claro que não é esperado que todos consigam realizá-lo por completo, já que é destinado a todos os níveis de carreira. Esperamos que todas as pessoas que tenham queiram trabalhar conosco tentem realizá-lo. Focamos aqui em design de código e design patterns em JavaScript. O objetivo é avaliar sua experiência em escrever código de fácil manutenção, baixo acoplamento e alta coesão. A Creditas trabalha sempre com feedbacks construtivos, e portanto, daremos sempre uma atenção especial para todos que submeterem o teste, passando para o candidato quais são os pontos positivos do seu teste e os pontos a melhorar. Vale a pena tentar :) !
 
 <img style="display: block; margin: 0 auto;" src="./layout.png">
 
@@ -11,8 +11,8 @@ Você deverá implementar algumas funcionalidades para uma calculadora de simula
 
 A interface está previamente definida, assim como os estilos.
 
-Sinta-se à vontade para componentizar o que achar que deve ser componentizado. 
-Só gostariamos que o teste fosse realizado com Javascript puro, nosso querido vanilla. O que acha de encarar o desafio? 
+Sinta-se à vontade para componentizar o que achar que deve ser componentizado.
+Só gostariamos que o teste fosse realizado com Javascript puro, nosso querido vanilla. O que acha de encarar o desafio?
 
 ### Caso de uso
 
@@ -23,7 +23,7 @@ O usuário deverá escolher o tipo de garantia que quer utilizar no pedido de em
 **Regras em comum**
 - Taxa de IOF: 6.38%;
 - Taxa de Juros: 2.34%;
-- Valor máximo para empréstimo: 80% do valor da garantia; 
+- Valor máximo para empréstimo: 80% do valor da garantia;
 
 *Fórmula do valor total a pagar*
 
@@ -56,12 +56,6 @@ Hoje, a Creditas possui dois produtos: empréstimo com garantia de veículo e de
 - Prazos para imóvel : 120 / 180 / 240 meses;
 
 Por fim, você deve exibir o valor da parcela no campo correspondente a cada mudança nos inputs do formulário.
-
-## Design de código Javascript
-
-**Legibilidade e separação de responsabilidades**
-
-Atualmente, o arquivo `index.js` possui muitas funções, o que dificulta a legibilidade. Se você reparar, partes delas podem ser utilizadas em múltiplos lugares. Esperamos que você organize seu código seguindo algum modelo de sua escolha. Leve em consideração a possibilidade de adicionar e/ou remover regras e produtos. Imagine que este código é parte de um projeto a longo prazo da empresa. Esperamos que cada responsabilidade esteja separada e isolada, para tornar a manutenção mais simples para toda a equipe de desenvolvimento.
 
 ## Desenvolvimento
 
