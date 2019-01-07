@@ -1,9 +1,11 @@
 <img src="https://www.creditas.com.br/static/images/logo-creditas-color-8367919c2a.svg" width="400">
 
 # Challenge Frontend - Creditas
-Esse é um teste de nivelamento. Queremos deixar claro que não é esperado que todos consigam realizá-lo por completo, já que é destinado a todos os níveis de carreira. Esperamos que todas as pessoas que queiram trabalhar conosco tentem realizá-lo. Focamos aqui em design de código e design patterns em JavaScript. O objetivo é avaliar sua experiência em escrever código de fácil manutenção, baixo acoplamento e alta coesão. A Creditas trabalha sempre com feedbacks construtivos, e portanto, daremos sempre uma atenção especial para todos que submeterem o teste, passando para o candidato quais são os pontos positivos do seu teste e os pontos a melhorar. Vale a pena tentar :) !
+Esse é um teste de nivelamento. Queremos deixar claro que não é esperado que todos consigam realizá-lo por completo, já que é destinado a todos os níveis de carreira. Esperamos que todas as pessoas que queiram trabalhar conosco tentem realizá-lo.
 
-<img style="display: block; margin: 0 auto;" src="./layout.png">
+Focamos aqui em design de código e design patterns em JavaScript. O objetivo é avaliar sua experiência em escrever **código de fácil manutenção, baixo acoplamento e alta coesão**.
+
+A Creditas trabalha sempre com feedbacks construtivos e, portanto, daremos sempre uma atenção especial para todos que submeterem o teste, passando para o candidato quais são os pontos positivos do seu teste e os pontos a melhorar. Vale a pena tentar! :)
 
 ## Apresentação do problema
 
@@ -13,6 +15,10 @@ A interface está previamente definida, assim como os estilos.
 
 Sinta-se à vontade para componentizar o que achar que deve ser componentizado.
 Só gostariamos que o teste fosse realizado com Javascript puro, nosso querido vanilla. O que acha de encarar o desafio?
+
+<img style="display: block; margin: 0 auto;" src="./layout.png">
+
+
 
 ### Caso de uso
 
