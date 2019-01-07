@@ -9,22 +9,22 @@ A Creditas trabalha sempre com feedbacks construtivos e, portanto, daremos sempr
 
 ## Apresentação do problema
 
-Você deverá implementar algumas funcionalidades para uma calculadora de simulação de crédito.
+Você deverá melhorar a calculadora de simulação de crédito implementada neste projeto.
 
 A interface está previamente definida, assim como os estilos.
+Os desafios incluem refatorar o código e implementar funcionalidades (detalhados mais abaixo).
 
 Sinta-se à vontade para componentizar o que achar que deve ser componentizado.
 Só gostariamos que o teste fosse realizado com Javascript puro, nosso querido vanilla. O que acha de encarar o desafio?
 
+O estado atual da calculadora:
 <img style="display: block; margin: 0 auto;" src="./layout.png">
 
 
 
-### Caso de uso
+### Funcionalidade esperada
 
-A aplicação deve atender os seguintes casos de uso:
-
-O usuário deverá escolher o tipo de garantia que quer utilizar no pedido de empréstimo: "Veículo" ou "Imóvel" (o preenchimento padrão é "Veículo");
+A aplicação deverá permitir ao usuário escolher o tipo de garantia que quer utilizar no pedido de empréstimo: ***"Veículo"*** ou ***"Imóvel"*** (o preenchimento padrão é *"Veículo"*) e seguir as regras de cálculo abaixo.
 
 **Regras em comum**
 - Taxa de IOF: 6.38%;
@@ -46,10 +46,14 @@ const valorDaParcela = valorTotalAPagar / prazo
 ## Desafios a cumprir
 
 ### CSS
+* **Refatorar para facilitar manutenção**
 Atualmente o arquivo CSS possui muitos estilos, o que dificulta a legibilidade. Esperamos que você faça uma boa arganização dos estilos, isolando-os para torná-los mais legíveis e, assim, facilitar a manutenção.
 
 ### HTML / JS
-Hoje, a Creditas possui dois produtos: empréstimo com garantia de veículo e de imóvel. Na interface deste projeto, ao mudar o tipo de garantia no elemento `select`, o usuário deve ver as opções de valores e prazos referentes ao tipo selecionado. Ou seja, ao selecionar veículo ou imóvel, você deve mostrar na tela opções diferentes nos campos do formulário e no slider. Veja abaixo os valores correspondentes:
+* **Adicionar a opção de garantia _"Imóvel"_** (com as respectivas regras de cálculo)
+* **Refatorar código antigo (e organizar código novo) para facilitar manutenção**
+Hoje, a Creditas possui dois produtos: empréstimo com garantia de veículo e de imóvel. O projeto atual tem implementada apenas a opção de garantia *"Veículo"*, você deve implementar a opção *"Imóvel"*.
+Ao mudar o tipo de garantia no elemento `select`, o usuário deve ver as opções de valores e prazos referentes ao tipo selecionado. Ou seja, ao selecionar veículo ou imóvel, você deve mostrar na tela opções diferentes nos campos do formulário e no slider. Veja abaixo os valores correspondentes:
 
 **Veículo**
 - Valor mínimo para empréstimo: R$ 3.000,00;
@@ -64,9 +68,6 @@ Hoje, a Creditas possui dois produtos: empréstimo com garantia de veículo e de
 Por fim, você deve exibir o valor da parcela no campo correspondente a cada mudança nos inputs do formulário.
 
 ## Desenvolvimento
-
-### Construído com
-Este projeto possui algumas bibliotecas para nos auxiliar nos testes e rodar a aplicação, são eles: Webpack, Babel, Jest e Eslint
 
 ### Pré-requisitos
 Você precisa minimamente do [NodeJs](https://nodejs.org/en/) instalado para rodar a apliação e o [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) para baixar o repositório e submeter um pull-request
@@ -83,6 +84,9 @@ npm start
 ```
 
 Se tudo estiver ok, acesse a url [http://localhost:3000/](http://localhost:3000/)
+
+### Construído com
+Este projeto possui algumas bibliotecas para nos auxiliar nos testes e rodar a aplicação, são eles: *Webpack*, *Babel*, *Jest* e *Eslint*.
 
 ## Tests
 
