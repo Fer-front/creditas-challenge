@@ -26,5 +26,5 @@
 
 ## Avaliação
 Para nos enviar seu código, você pode:
-- Dar acesso ao seu repositório privado no Bitbucket para `creditaschallenge`.
+ - Dar acesso ao seu repositório privado no [Gitlab](http://gitlab.com) para `creditaschallenge`.
 - Mandar um email para `ds-squad@creditas.com.br`
