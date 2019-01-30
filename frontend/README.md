@@ -95,3 +95,6 @@ Para rodar os testes é necessário executar o comando abaixo:
 ```shell
 npm test
 ```
+
+## Feedback (opcional)
+Aqui na Creditas o feedback faz parte da nossa cultura, seria muito gratificante se após concluir o teste, você pudesse contribuir com nosso processo de contração respondendo [este pequeno questionário.](https://docs.google.com/forms/d/e/1FAIpQLSdTNMc2JqnvNxy4J3gAN-vQqsfG6PscH5hVQRC9dyMK1PlnRw/viewform?usp=sf_link)
