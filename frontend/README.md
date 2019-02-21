@@ -83,7 +83,7 @@ npm install
 npm start
 ```
 
-Se tudo estiver ok, acesse a url [http://localhost:3000/](http://localhost:3000/)
+Se tudo estiver ok, acesse a url [http://localhost:4000/](http://localhost:4000/)
 
 ### Construído com
 Este projeto possui algumas bibliotecas para nos auxiliar nos testes e rodar a aplicação, são eles: *Webpack*, *Babel*, *Jest* e *Eslint*.
