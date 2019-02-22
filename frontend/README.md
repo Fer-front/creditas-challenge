@@ -47,11 +47,13 @@ const valorDaParcela = valorTotalAPagar / prazo
 
 ### CSS
 * **Refatorar para facilitar manutenção**
+
 Atualmente o arquivo CSS possui muitos estilos, o que dificulta a legibilidade. Esperamos que você faça uma boa arganização dos estilos, isolando-os para torná-los mais legíveis e, assim, facilitar a manutenção.
 
 ### HTML / JS
 * **Adicionar a opção de garantia _"Imóvel"_** (com as respectivas regras de cálculo)
 * **Refatorar código antigo (e organizar código novo) para facilitar manutenção**
+
 Hoje, a Creditas possui dois produtos: empréstimo com garantia de veículo e de imóvel. O projeto atual tem implementada apenas a opção de garantia *"Veículo"*, você deve implementar a opção *"Imóvel"*.
 Ao mudar o tipo de garantia no elemento `select`, o usuário deve ver as opções de valores e prazos referentes ao tipo selecionado. Ou seja, ao selecionar veículo ou imóvel, você deve mostrar na tela opções diferentes nos campos do formulário e no slider. Veja abaixo os valores correspondentes:
 
@@ -97,4 +99,4 @@ npm test
 ```
 
 ## Feedback (opcional)
-Aqui na Creditas o feedback faz parte da nossa cultura, seria muito gratificante se após concluir o teste, você pudesse contribuir com nosso processo de contração respondendo [este pequeno questionário.](https://docs.google.com/forms/d/e/1FAIpQLSdTNMc2JqnvNxy4J3gAN-vQqsfG6PscH5hVQRC9dyMK1PlnRw/viewform?usp=sf_link)
+Aqui na Creditas o feedback faz parte da nossa cultura, seria muito gratificante se, tendo concluído ou não o teste, você pudesse contribuir com nosso processo de contração respondendo [este pequeno questionário.](https://docs.google.com/forms/d/e/1FAIpQLSdTNMc2JqnvNxy4J3gAN-vQqsfG6PscH5hVQRC9dyMK1PlnRw/viewform?usp=sf_link)
