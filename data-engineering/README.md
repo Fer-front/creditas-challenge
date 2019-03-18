@@ -80,17 +80,19 @@ Keep in mind that "lead" is an interested person, which may or may not become a 
 
 Please note that in the column `credit_decision`, an `A` stands for *Approval* and a `D` stands for *Denied*. Also, you will notice that even if a customer is approved he/she may give up and don't sign the contract; which, in turn, will generate no revenue.
 
-### What the user needs
+### What the user needs to answer
 
 The digital marketing team is a highly data driven and results oriented team. They need you to prepare the analytical database/tables where they will perform queries to answer the following business questions:
 
- - What was the most expensive campaign?
- - What was the most profitable campaign? In other words, which one presented the best ROI?
- - Which ad creative is the most effective in terms of clicks? What about generating leads?
+1. What was the most expensive campaign?
+2. What was the most profitable campaign? In other words, which one presented the best ROI?
+3. Which ad creative is the most effective in terms of clicks? What about generating leads?
 
 ### What you need to do
 
-Ingest the data in a database and provide a single table ready to be used to answer the questions above. We expect you to understand the data, how the datasets fit together and how to best store/represent data to the end data user.
+Using the tools (including the programming language) of your choice, ingest the data in a database and provide a single table ready to be used to answer the questions above. We expect you to understand the data, how the datasets fit together and how to best store/represent data to the end data user.
+
+Last but not least, provide in your README 3 SQL queries that are answers for each one of the 3 business questions presented above.
 
 ### How to deliver
 
@@ -103,7 +105,8 @@ Create a github private repository and grant access to the user `acasimiro`. Ple
 - We expect your code to work;
 - We expect you provide a README and explain how to make it work;
 - We love docker, and it would be great if we could test your code just running a docker container;
-- Contact the recruiter if have any doubts;
+- We love [markdown](https://guides.github.com/features/mastering-markdown/) in the README;
+- Contact the recruiter if have any doubts :wink:;
 
 ### Our Stack
 
