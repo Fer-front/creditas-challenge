@@ -1,66 +1,131 @@
 # Creditas Data Engineering Challenge
 
-This challenge is intended to evaluate your understanding of the data engineering field and your capacity to deliver a professional solution. We will evaluate not just the correctness of your solution, but also how you approach a problem and even your coding style (yep, we're that critical).
+## Introduction
 
-## Description
+Hi! We're glad to know you intend to work with us in the Creditas Data Engineering team. It means a lot you're taking time to do this programming assignment! :smiley:
 
-### Data Modeling
+This challenge mimics a task we ourselves deal with on a daily basis and it was designed to asses your coding skills. We expect you to deliver a professional solution, taking into account correctness, performance and code organization. :nerd_face:
 
-There is a file named *datasets.tar.gz* along with this description. In this file you will find the files described below:
+## The problem
 
-- `dca_dataset_loan_transactions.jsonl`:
-    - This dataset is the complete list of all private loans made under USAID's DCA since it was established in 1999;
-    - See more at *[https://www.usaid.gov/data/dataset/854d1b81-a517-4966-957c-5428fb4c1821](https://www.usaid.gov/data/dataset/854d1b81-a517-4966-957c-5428fb4c1821)*.
-- `dca_dataset_utilization_and_claims.jsonl`:
-    - This USAID dataset shows the partial credit guarantees that USAID has issued since the development credit authority program was founded in 1999;
-    - See more at *[https://www.usaid.gov/data/dataset/31fbe412-d87a-41b1-bf62-259895057f79](https://www.usaid.gov/data/dataset/31fbe412-d87a-41b1-bf62-259895057f79)*.
-- `hdi_human_development_index_hdig_value.jsonl`:
-    - HDI from 1980 to 2013;
-    - See more at *[https://data.humdata.org/dataset/human-development-index-hdi](https://data.humdata.org/dataset/human-development-index-hdi)*.
-- `world_currencies_conversion_rates.csv`:
-    - Dollar based conversion rates for world currencies from 1950 to 2017;
-    - See more at *[https://data.oecd.org/conversion/exchange-rates.htm](https://data.oecd.org/conversion/exchange-rates.htm)*.
+### Understanding the context of digital marketing
 
-From the datasets above, the first two represent loans and guarantees USAID has issued since 1999, the third contains HDI indices and the fourth conversion rates across the globe. You must ingest this data into a PostgreSQL "data warehouse" (a Redshift simulation).
+Digital Marketing is all about attracting new customers using online tools, such as facebook, google search, LinkedIn, and others. All these platforms provide paid capabilities for companies willing to advertise their products to potential customers. In short, digital marketing is just like traditional marketing but using digital media instead of physical ones (like newspaper, magazines, outdoors). Also, a key difference between them is that with digital media is possible to track user engagement and adjust the marketing strategy accordingly, optimizing the money spent with marketing.
 
-Create the tables you judge necessary and use the types and constraints best suitable for each pair.
+If you know nothing about digital marketing that's fine, you're not supposed to. Besides, you can accomplish this challenge anyway. But if you'd like to know a bit more, [here's a video in portuguese that may help you](https://www.youtube.com/watch?time_continue=37&v=FZSv56lpFzw).
 
-### Data Processing
+### The data
 
-If you take a look at the dataset, you will notice the data are not entirely "normalized". Use the tool(s) of your choice to solve the problem, but no overkill solutions (althought we suggest involving some Python here).
+There are 4 different datasets to handle and integrate.
 
-### Data Recovery
+#### `google_ads_media_costs.jsonl`
 
-It is not expected too fancy analyses, but we are expecting that you may provide some insights about this data you just modeled into tables and had so much effort to process. Although this challenge is aimed for data engineering, your most common client will be a data analyst. SQL is a good tool to use (of course, since I told you to use a PostgreSQL...). Some questions we would like answered are:
+This dataset contains ad campaign costs from Google Ads Platform, one json string per line.
 
-*The HDI dataset shows the evolution from 1980 to 2013. It surely involves economy. Is it possible to make a correlation between a country/continent movement on the HDI index and the loans received through time?*
+Line example:
 
-*Can you find a loan without a guarantee and vice versa?*
+```json
+{
+    "date": "2018-10-01",
+    "campaign_id": 1001,
+    "campaign_name": "emprestimo_garantia|auto|natal2018",
+    "ad_creative_id": 20001,
+    "ad_creative_name": "homem_sorrindo_fundo_carro_012",
+    "clicks": 3979,
+    "impressions": 157767,
+    "cost": 20.4
+}
+```
 
-*Given the conversion rates, how much money each country received in it's local currency?*
+#### `facebook_ads_media_costs.jsonl`
 
-Can you discover more interesting relations?
+This dataset contains ad campaign costs from Facebook Ads Platform, one json string per line. It is very similar to the previous, but do not provide ad creative information.
+
+Line example:
+
+```json
+{
+    "date": "2018-10-01",
+    "id_fb_campaign": 3001,
+    "name_fb_campaign": "emprestimo_garantia|auto|natal2018",
+    "clicks": 2265,
+    "impressions": 397781,
+    "cost": 246.78
+}
+```
+
+#### `pageviews.txt`
+
+This file comes from the webserver logs and provide pageviews information about a customer visiting our website. It is a purely text file.
+
+Line example:
+
+```txt
+203.0.181.219 - [2018-10-01 00:00:00] "GET / HTTP/1.1" 200 http://www.creditas.com.br/emprestimo-com-garantia?ad_creative_id=20003&campaign_id=1002 | device_id: mmRe2Qts07 | referer: http://google.com.br
+```
+
+From the URL address you can find the `ad_creative_id` and the `campaign_id`. Also the `referer` indicates where it came from, wheter from Google Ads, Facebook Ads or is other, which are considered organic traffic.
+
+#### `customer_leads_funnel.csv`
+
+This file represents a copy of a analytical table that already exists in our environment.
+
+| device_id  | lead_id   | registered_at       | credit_decision | credit_decision_at  | signed_at           | revenue  |
+| ---------- | --------- | ------------------- | --------------- | ------------------- | ------------------- | -------- |
+| 3HTZRCZdLc | 578419657 | 2018-10-01 00:00:50 | A               | 2018-10-05 19:37:50 |                     |          |
+| Mr35TsBJtE | 581565131 | 2018-10-01 00:10:22 | D               | 2018-10-01 10:17:22 |                     |          |
+| 1ZBFWuW5Qd | 100080974 | 2018-10-01 01:32:12 | A               | 2018-10-04 21:00:12 | 2018-10-07 01:59:12 | 19340.61 |
+
+Keep in mind that "lead" is an interested person, which may or may not become a customer. The _lead_ becomes a customer when he/she signs the contract.
+
+Please note that in the column `credit_decision`, an `A` stands for *Approval* and a `D` stands for *Denied*. Also, you will notice that even if a customer is approved he/she may give up and don't sign the contract; which, in turn, will generate no revenue.
+
+### What the user needs
+
+The digital marketing team is a highly data driven and results oriented team. They need you to prepare the analytical database/tables where they will perform queries to answer the following business questions:
+
+ - What was the most expensive campaign?
+ - What was the most profitable campaign? In other words, which one presented the best ROI?
+ - Which ad creative is the most effective in terms of clicks? What about generating leads?
+
+### What you need to do
+
+Ingest the data in a database and provide a single table ready to be used to answer the questions above. We expect you to understand the data, how the datasets fit together and how to best store/represent data to the end data user.
+
+### How to deliver
+
+Create a github private repository and grant access to the user `acasimiro`. Please also respond the original e-mail with this challenge link informing you submitted your solution.
 
 ## Hints
 
 - We use git;
-- Your solution may be tested in a cloud environment (well... we use AWS for a matter of fact);
-- Fancy patterns are not what we're going after, but some understanding of OOP principles would be nice (we're devs);
-- Please, do some level of automated deployment (even if it just involves some bash script creating a package with the files needed to run your application).
+- We value well written code and good usage of OOP principles;
+- We expect your code to work;
+- We expect you provide a README and explain how to make it work;
+- We love docker, and it would be great if we could test your code just running a docker container;
+- Contact the recruiter if have any doubts;
 
-## Extras
+### Our Stack
 
-Are you up for a new challenge?
+*This is merely informative. You don't need to know or use this.*
 
-- What if the files are updated on a daily basis? How would you ingest the new and modified records without having to create the tables in every run?
-- Could you detach the data ingestion from source files? Are you able to ingest in "real time" using a Kafka stream? Define the event's payload and provide the code to process it.
-
-## Our Stack
-
-*This is purely informative. You don't need to know all of this.*
-
-- AWS (Redshift, S3 and etc.);
+- AWS;
+- Redshift;
+- S3;
 - Airflow;
 - Spark;
-- Kafka (coming soon);
-- Snowplow (we don't like this guy very much...).
+- Kafka;
+- Snowplow;
+- Docker;
+- Python;
+- Postgres;
+- Kimball DW architecture;
+
+## Extra questions
+
+This is not part of the challenge, but if you'd like to go further, please provide answers for the following questions in your README. There is no need to code, just explain how you would address the following:
+
+- What would you suggest to process new incoming files several times a day?
+- What would you suggest to process new incoming data in near real time?
+- What would you suggest to process data that is much bigger?
+- What would you suggest to process data much faster?
