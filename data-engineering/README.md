@@ -86,7 +86,7 @@ Line example:
 
 ```
 
-From the URL address you can find the `ad_creative_id` and the `campaign_id`. Also the `referer` indicates where it came from, wheter from Google Ads (`http://google.com.br`), Facebook Ads (`http://www.facebook.com`) or organic traffic (anything else).
+From the URL address you can find the `ad_creative_id` and the `campaign_id`. Also the `referer` indicates where it came from, whether from Google Ads (`http://google.com.br`), Facebook Ads (`http://www.facebook.com`) or organic traffic (anything else).
 
 #### `customer_leads_funnel.csv`
 
