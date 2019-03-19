@@ -6,17 +6,35 @@ Hi! We're glad to know you intend to work with us in the Creditas Data Engineeri
 
 This challenge mimics a task we ourselves deal with on a daily basis and it was designed to asses your coding skills. We expect you to deliver a professional solution, taking into account correctness, performance and code organization. :nerd_face:
 
-## The problem
+## The problem: digital media effectiveness
 
-### Understanding the context of digital marketing
+### A little bit on digital marketing
 
 Digital Marketing is all about attracting new customers using online tools, such as facebook, google search, LinkedIn, and others. All these platforms provide paid capabilities for companies willing to advertise their products to potential customers. In short, digital marketing is just like traditional marketing but using digital media instead of physical ones (like newspaper, magazines, outdoors). Also, a key difference between them is that with digital media is possible to track user engagement and adjust the marketing strategy accordingly, optimizing the money spent with marketing.
 
-If you know nothing about digital marketing that's fine, you're not supposed to. Besides, you can accomplish this challenge anyway. But if you'd like to know a bit more, [here's a video in portuguese that may help you](https://www.youtube.com/watch?time_continue=37&v=FZSv56lpFzw).
+This challenge is about preparing data to analyze digital media effectivenes on our business. If you know nothing about digital marketing that's fine, you're not supposed to and previous knowledge in this matter is not needed. Here are some of the key digital marketing concepts:
+
+ - *Campaign*: a marketing campaign is a series of coordinated advertising actions intended to target a specific group of potential customers;
+ - *Ad Creative*: a graphical image or video that conveys the message being advertised;
+ - *Ad Impressions*: one single occurrence of displaying an ad to a customer;
+ - *Clicks*: one single click on the ad that leads the customer to the company's website;
+
+### Creditas conversion funnel
+
+We can look at the path the customers goes from getting to know a company to converting into a customer as a funnel. It is a funnel because for each further step we look we progressively find less people involved. The following image illustrate a very simplified version of the conversion funnel we have here in Creditas.
+
+![conversion_funnel](conversion_funnel.png)
+
+Initially the customer is unaware of our product, the goal of digital marketing is attract potential customers into the conversion funnel. After the customer fills out a lead form (that means he/she is interested), we will run the credit analysis and then formalize the operation signing the contract.
+
+The operation may not be completed by many reasons, such as:
+ - the customer is not approved in credit analysis;
+ - the customer is suspected of being a fraud;
+ - the customer loses interest and quit the process.
 
 ### The data
 
-There are 4 different datasets to handle and integrate.
+There are 4 different datasets to handle and *integrate*.
 
 #### `google_ads_media_costs.jsonl`
 
@@ -39,7 +57,7 @@ Line example:
 
 #### `facebook_ads_media_costs.jsonl`
 
-This dataset contains ad campaign costs from Facebook Ads Platform, one json string per line. It is very similar to the previous, but do not provide ad creative information.
+This dataset contains ad campaign costs from Facebook Ads Platform, one json string per line. It is very similar to the previous, but *do not provide ad creative* information.
 
 Line example:
 
@@ -54,17 +72,21 @@ Line example:
 }
 ```
 
+
 #### `pageviews.txt`
 
-This file comes from the webserver logs and provide pageviews information about a customer visiting our website. It is a purely text file.
+This file comes from the webserver logs and provide pageviews information about a customer visiting our website. It is a purely text file so to extract information from it you have to parse each line and capture just what is needed.
 
 Line example:
 
 ```txt
 203.0.181.219 - [2018-10-01 00:00:00] "GET / HTTP/1.1" 200 http://www.creditas.com.br/emprestimo-com-garantia?ad_creative_id=20003&campaign_id=1002 | device_id: mmRe2Qts07 | referer: http://google.com.br
+192.0.5.86 - [2018-10-01 00:00:00] "GET / HTTP/1.1" 200 http://www.bankfacil.com.br/emprestimo-com-garantia?campaign_id=3005 | device_id: i2IJLNavik | referer: http://www.facebook.com
+192.14.66.90 - [2018-10-01 00:15:00] "GET / HTTP/1.1" 200 http://www.bankfacil.com.br/emprestimo-com-garantia | device_id: Pk9yEGx715 | referer: https://www.moreira.br/
+
 ```
 
-From the URL address you can find the `ad_creative_id` and the `campaign_id`. Also the `referer` indicates where it came from, wheter from Google Ads, Facebook Ads or is other, which are considered organic traffic.
+From the URL address you can find the `ad_creative_id` and the `campaign_id`. Also the `referer` indicates where it came from, wheter from Google Ads (`http://google.com.br`), Facebook Ads (`http://www.facebook.com`) or organic traffic (anything else).
 
 #### `customer_leads_funnel.csv`
 
@@ -78,7 +100,7 @@ This file represents a copy of a analytical table that already exists in our env
 
 Keep in mind that "lead" is an interested person, which may or may not become a customer. The _lead_ becomes a customer when he/she signs the contract.
 
-Please note that in the column `credit_decision`, an `A` stands for *Approval* and a `D` stands for *Denied*. Also, you will notice that even if a customer is approved he/she may give up and don't sign the contract; which, in turn, will generate no revenue.
+Please note that in the column `credit_decision`, an `A` stands for *Approved* and a `D` stands for *Denied*. Also, you will notice that even if a customer is approved he/she may give up and don't sign the contract; which, in turn, will generate no revenue.
 
 ### What the user needs to answer
 
@@ -92,7 +114,7 @@ The digital marketing team is a highly data driven and results oriented team. Th
 
 Using the tools (including the programming language) of your choice, ingest the data in a database and provide a single table ready to be used to answer the questions above. We expect you to understand the data, how the datasets fit together and how to best store/represent data to the end data user.
 
-Last but not least, provide in your README 3 SQL queries that are answers for each one of the 3 business questions presented above.
+Last but not least, provide 3 SQL queries in your README that are answers for each one of the 3 business questions presented above.
 
 ### How to deliver
 
