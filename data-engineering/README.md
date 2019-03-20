@@ -45,8 +45,8 @@ Line example:
 ```json
 {
     "date": "2018-10-01",
-    "campaign_id": 1001,
-    "campaign_name": "emprestimo_garantia|auto|natal2018",
+    "google_campaign_id": 1001,
+    "google_campaign_name": "emprestimo_garantia|auto|natal2018",
     "ad_creative_id": 20001,
     "ad_creative_name": "homem_sorrindo_fundo_carro_012",
     "clicks": 3979,
@@ -57,21 +57,20 @@ Line example:
 
 #### `facebook_ads_media_costs.jsonl`
 
-This dataset contains ad campaign costs from Facebook Ads Platform, one json string per line. It is very similar to the previous, but *do not provide ad creative* information.
+This dataset contains ad campaign costs from Facebook Ads Platform, one json string per line. It is very similar to the previous, but *do not provide the ad creative id* information.
 
 Line example:
 
 ```json
 {
     "date": "2018-10-01",
-    "id_fb_campaign": 3001,
-    "name_fb_campaign": "emprestimo_garantia|auto|natal2018",
+    "fb_campaign_id": 3001,
+    "fb_campaign_name": "emprestimo_garantia|auto|natal2018",
     "clicks": 2265,
     "impressions": 397781,
     "cost": 246.78
 }
 ```
-
 
 #### `pageviews.txt`
 
