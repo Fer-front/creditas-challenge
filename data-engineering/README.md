@@ -16,12 +16,12 @@ This challenge is about preparing data to analyze digital media effectivenes on 
 
  - *Campaign*: a marketing campaign is a series of coordinated advertising actions intended to target a specific group of potential customers;
  - *Ad Creative*: a graphical image or video that conveys the message being advertised;
- - *Ad Impressions*: one single occurrence of displaying an ad to a customer;
+ - *Ad Impressions*: one single occurrence of displaying an ad to a potential customer;
  - *Clicks*: one single click on the ad that leads the customer to the company's website;
 
 ### Creditas conversion funnel
 
-We can look at the path the customers goes from getting to know a company to converting into a customer as a funnel. It is a funnel because for each further step we look we progressively find less people involved. The following image illustrate a very simplified version of the conversion funnel we have here in Creditas.
+We can look at the path the customers goes from getting to know a company to converting into a customer as a funnel. It is a funnel because for each further step we look, we will progressively find less people involved. The following image illustrates a very simplified version of the conversion funnel we have here in Creditas.
 
 ![conversion_funnel](conversion_funnel.png)
 
@@ -30,11 +30,11 @@ Initially the customer is unaware of our product, the goal of digital marketing 
 The operation may not be completed by many reasons, such as:
  - the customer is not approved in credit analysis;
  - the customer is suspected of being a fraud;
- - the customer loses interest and quit the process.
+ - the customer loses interest and quits the process.
 
 ### The data
 
-There are 4 different datasets to handle and *integrate*.
+There are 4 different datasets to handle and *integrate*. They are all made up, it's not real data.
 
 #### `google_ads_media_costs.jsonl`
 
@@ -106,44 +106,49 @@ Please note that in the column `credit_decision`, an `A` stands for *Approved* a
 The digital marketing team is a highly data driven and results oriented team. They need you to prepare the analytical database/tables where they will perform queries to answer the following business questions:
 
 1. What was the most expensive campaign?
-2. What was the most profitable campaign? In other words, which one presented the best ROI?
-3. Which ad creative is the most effective in terms of clicks? What about generating leads?
+2. What was the most profitable campaign?
+3. Which ad creative is the most effective in terms of clicks?
+4. Which ad creative is the most effective in terms of generating leads?
 
 ### What you need to do
 
-Using the tools (including the programming language) of your choice, ingest the data in a database and provide a single table ready to be used to answer the questions above. We expect you to understand the data, how the datasets fit together and how to best store/represent data to the end data user.
+Using `python` and other tools of your choice:
+ - ingest the data in a database;
+ - provide a single table ready to be used to answer the questions above;
+ - provide 4 SQL queries in your README that are answers for each business question presented above;
+ - explain how to reproduce your solution;
 
-Last but not least, provide 3 SQL queries in your README that are answers for each one of the 3 business questions presented above.
+We expect you to understand the data, how the datasets fit together and how to best store/represent data to the end data user.
 
-### How to deliver
+### How to deliver your solution
 
-Create a github private repository and grant access to the user `acasimiro`. Please also respond the original e-mail with this challenge link informing you submitted your solution.
+Create a github private repository and grant access to the user `acasimiro`. Please also reply the original e-mail with the link to this page informing you submitted your solution.
 
-## Hints
+## Hints about us
 
 - We use git;
 - We value well written code and good usage of OOP principles;
 - We expect your code to work;
-- We expect you provide a README and explain how to make it work;
+- We expect you provide a README and explain how to run your code;
 - We love docker, and it would be great if we could test your code just running a docker container;
 - We love [markdown](https://guides.github.com/features/mastering-markdown/) in the README;
-- Contact the recruiter if have any doubts :wink:;
+- We don't bite, so if you have any doubts please contact the recruiter :wink:;
 
 ### Our Stack
 
 *This is merely informative. You don't need to know or use this.*
 
-- AWS;
-- Redshift;
-- S3;
+- Python;
+- Postgres;
+- Docker;
 - Airflow;
 - Spark;
 - Kafka;
-- Snowplow;
-- Docker;
-- Python;
-- Postgres;
 - Kimball DW architecture;
+- AWS;
+- Redshift;
+- S3;
+- Snowplow;
 
 ## Extra questions
 
