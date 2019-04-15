@@ -1,30 +1,49 @@
-# Desafio Data Science
+# Desafio Data Science - Creditas
 
-## Objetivo
-- Implementar um modelo que retorne a probabilidade que um cliente tem de ser enviado para análise de crédito dado que ele foi pré-aprovado para o empréstimo com garantia de automóvel. 
-- Além da implementação do modelo é esperado que o candidato faça a **avaliação** do mesmo, de maneira a entender o motivo pelo qual o modelo apresentado resolve o problema, incluindo quais atributos são mais importantes para o modelo e o motivo.
-- É necessário apresentar também a **análise exploratória dos dados**, incluindo as variáveis que foram eliminadas e os motivos.
+## Introdução
 
-## Dataset
-- Todos os dados necessários para modelagem estão no arquivo `dataset.csv`.
-- A descrição dos dados está no arquivo `description.csv`.
+Neste desafio apresentamos um problema real de Ciência de dados aqui da Creditas. Esperamos uma solução que possa ser apresentada para stakeholders, entre eles o próprio CEO. 
+
+## O problema
+
+A Creditas precisa entender como podemos priorizar os clientes de maneira que os clientes que tenham a maior probabilidade de serem enviados para a análise de crédito sejam atendidos primeiro.
+
+### Contexto sobre o fluxo do cliente
+
+Após preencher os dados no site da Creditas, solicitando um empréstimo com garantia de automóvel, o cliente passa por um conjunto de regras automaticas para saber se ele será pré-aprovado. Em caso positivo esse cliente pode prosseguir no fluxo e preencher uma quantidade maior de dados (ficha cadastral), o que irá agilizar o seu processo de atendimento. Em caso negativo, esse cliente fica impedido de fazer uma solicitação de empréstimo. Independente de preencher a ficha cadastral, o cliente pode ser atendido e um consultor de negócios fará a avaliação se a pessoa deve ou não ser enviada para análise.
+
+Mais detalhes sobre os campos do desafio podem ser encontrados no arquivo `description.csv`. 
+
+O seu objetivo é construir um modelo de classificação que retorne a probabilidade que um cliente tem de ser enviado para análise de crédito dado que ele foi pré-aprovado para o empréstimo com garantia de automóvel. Contudo, apenas a contrução do modelo não basta, já que é necessário que você realize a apresentação do mesmo para a equipe de Operações da Creditas e o time de Marketing e Analytics. Eles querem entender porque o seu modelo é melhor do que a decisão atual de priorização e para tal, é necessário que você realize a avaliação do modelo, com métricas de classificação, e avaliação dos atributos mais importantes para o modelo.
+
+
+## Os dados
+- Todos os dados necessários para modelagem estão no arquivo `dataset.csv`. A descrição dos dados está no arquivo `description.csv`.
 - Nesta base estão todos os clientes que entraram no site, mesmo aqueles que não foram pré-aprovados, sendo necessário filtrar os clientes válidos.
 
- ## Você deve
 
- - Escrever uma defesa para sua solução, descrevendo **DETALHADAMENTE** todas as etapas utilizadas para resolver o problema: a conceptualização, como realizou as descobertas, as técnicas/algoritmos utilizados e as soluções para cada um dos problemas encontrados. É necessário detalhar/justificar com *gráficos* e *tabelas* as descobertas.
- Você deve fazer isso em um arquivo separado, no formato `.pdf`, `.md` ou `.txt`. Atenção! O relatório não deve ultrapassar 5 páginas.
- - Mandar a sua solução em código Python ou R. O uso de bibiliotecas é livre, mas você deve ser capaz de explicar o conceito dos algoritmos utilizados de maneira sucinta, ou seja, como eles funcionam e porque os escolheu para uso.
- - Além do desenvolvimento da solução é necessário mostrar métricas de avaliação da solução desenvolvida. É necessário apresentar a matriz de confusão do(s) modelo(s) desenvolvido(s), além de outras métricas de avaliação. Pontos extras para o uso do ROC/AUC. Além das métricas é necessário enviar a avaliação dos atributos do modelo e uma possível explicação para o porque o modelo apresentado é bom.
- - Enviar o modelo final para que seja possível testá-lo com um novo conjunto de dados. Para isso você deve garantir que o seu código seja reproduzível e explicar como deveremos rodá-lo no relatório.
+## O que você precisa fazer
 
-### Atenção
+Utilizando um jupyter notebook, apresente a sua solução em python.
+
+1 - Apresentar uma **Análise Exploratória dos Dados** (Exploratory Data Analysis / EDA) com gráficos.
+2 - À partir da EDA acima, explicar decisões de pré processamento, limpeza, e remoção de dados. 
+3 - Construir um modelo de classificação que retorne a probabilidade que um cliente tem de ser enviado para análise de crédito dado que ele foi pré-aprovado para o empréstimo com garantia de automóvel. O uso de bibiliotecas é livre, mas você deve ser capaz de explicar o conceito dos algoritmos utilizados de maneira sucinta, ou seja, como eles funcionam e porque os escolheu para uso.
+4 - Além do desenvolvimento da solução é necessário mostrar métricas de avaliação da solução desenvolvida. Pense em métricas que fazem sentido para o problema em questão e na particularidade destes dados.
+5 - Avaliação e interpretabilidade do modelo. Você deve ser capaz de responder quais variáveis são importantes para o modelo construido e porquê.
+6 - Você deve garantir que o seu código seja reproduzível e explicar como deveremos rodá-lo em um arquivo `.md`.
+
+
+## Como entregar o desafio?
+Para nos enviar seu código, você pode:
+- Dar acesso ao seu repositório privado no [Gitlab](http://gitlab.com) para `creditaschallenge`.
+- Mandar um email para `ds-squad@creditas.com.br`
+
+
+### Dicas
  - Os dados não estão normalizados. O cliente pode ter preenchido valores incomuns em alguns campos, como a renda.
  - Alguns dados estão faltando. Faz parte do exercício entender como que os dados faltantes serão tratados (ou justificar se não o serão).
- - Você poderá usar dados externos, desde que explique **detalhadamente** quais dados usou e como o fez.
- - Não há um limite fixo de tempo, porém é estimada que uma semana é mais que o suficiente para para resolver o problema.
-
-## Avaliação
-Para nos enviar seu código, você pode:
- - Dar acesso ao seu repositório privado no [Gitlab](http://gitlab.com) para `creditaschallenge`.
-- Mandar um email para `ds-squad@creditas.com.br`
+ - Você poderá usar dados externos, desde que explique quais dados usou e como o fez.
+ - Valorizamos a objetividade, portanto seja sucinto em suas explicações e vá direto ao ponto.
+ - Acreditamos que uma boa avaliação pós modelagem é essencial! Não adianta só fazer um modelo e não entender o que está acontecendo ali.
+ - Não há um limite fixo de tempo, porém acreditamos que é possível resolver o desafio em uma semana com dedicação parcial. Caso precise de mais tempo, entre em contato com o time pelo email: `ds-squad@creditas.com.br`
