@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/rafaellucio/creditaschallenge.git"
+    "url": "git+git@github.com:Creditas/challenge.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/rafaellucio/creditaschallenge/issues"
+    "url": "https://github.com/Creditas/challenge/issues"
   },
-  "homepage": "https://gitlab.com/rafaellucio/creditaschallenge#readme",
+  "homepage": "https://github.com/Creditas/challenge/tree/master/frontend",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.3.3",
