@@ -48,7 +48,7 @@ const valorDaParcela = valorTotalAPagar / prazo
 ### CSS
 * **Refatorar para facilitar manutenção**
 
-Atualmente o arquivo CSS possui muitos estilos, o que dificulta a legibilidade. Esperamos que você faça uma boa arganização dos estilos, isolando-os para torná-los mais legíveis e, assim, facilitar a manutenção.
+Atualmente o arquivo CSS possui muitos estilos, o que dificulta a legibilidade. Esperamos que você faça uma boa organização dos estilos, isolando-os para torná-los mais legíveis e, assim, facilitar a manutenção.
 
 ### HTML / JS
 * **Adicionar a opção de garantia _"Imóvel"_** (com as respectivas regras de cálculo)
