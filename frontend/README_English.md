@@ -98,4 +98,4 @@ npm test
 ```
 
 ## Feedback (optional)
-Here at Creditas feedbacks are part of our culture, so it would be very rewarding if you could contribute with our hiring process by answering [this quick questionaire.] () We would like you to answer it even if you didn't finish the challenge.
+Here at Creditas feedbacks are part of our culture, so it would be very rewarding if you could contribute with our hiring process by giving us your opinions on the challenge. We would like you to send it even if you didn't finish the challenge.
