@@ -22,7 +22,7 @@ The calculator's current state:
 ### Expected functionalities
 
 The application must allow user to choose the collateral type they want to use in their equity loan simulation:
-***"Auto"*** or ***"Home"*** (the default option is ***"Auto"***).
+***"Auto"*** or ***"Home"*** (the default option is ***"Auto"*** ).
 
 It should also follow the calculation rules bellow:
 
@@ -46,13 +46,13 @@ const monthlyPayment = totalLoanPayments / termInMonths
 ## Challenges to achieve
 
 ### CSS
-* **Refactor to make maintainance easier** *
+* **Refactor to make maintainance easier** 
 
 Currently, the project's CSS file has too many styles, making readability difficult. We expect you to organize styles, isolating it in order to make them more readable and easier to maintain.
 
 ### HTML / JS
-* **Add new collateral type _"Home"_** (with its calculation rules) *
-* **Refactor the code, organizing it to make maintainance easier** *
+* **Add new collateral type _"Home"_** (with its calculation rules) 
+* **Refactor the code, organizing it to make maintainance easier** 
 
 Currently, Creditas offers two products: home equity loan and auto equity loan. This project implements only the *"auto equity"* option and you must implement the *"home equity"* option.
 By changing the collateral type in the `select` element, the user must see the amount and term options corresponding to the chosen product. That is, by selecting home or auto, you must show different options on the form fields and on the slider. Find the corresponding values bellow:
