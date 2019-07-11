@@ -11,7 +11,7 @@ Creditas likes to work with constructive feedbacks, therefore we will pay specia
 
 You have to improve the loan simulation calculator that is implemented in this project.
 
-The interface is previously given, as well as the styles. The challenges include refactoring the code and implenting new functionalities (listed bellow).
+The interface is previously given, as well as the styles. The challenges include refactoring the code and implenting new functionalities (listed below).
 
 Feel free to componentize what you think should be componentized. Our only request is that you use only pure Javascript, our beloved Vanilla. How do you like that?
 
@@ -55,7 +55,7 @@ Currently, the project's CSS file has too many styles, making readability diffic
 * **Refactor the code, organizing it to make maintainance easier** 
 
 Currently, Creditas offers two products: home equity loan and auto equity loan. This project implements only the *"auto equity"* option and you must implement the *"home equity"* option.
-By changing the collateral type in the `select` element, the user must see the amount and term options corresponding to the chosen product. That is, by selecting home or auto, you must show different options on the form fields and on the slider. Find the corresponding values bellow:
+By changing the collateral type in the `select` element, the user must see the amount and term options corresponding to the chosen product. That is, by selecting home or auto, you must show different options on the form fields and on the slider. Find the corresponding values below:
 
 **Auto**
 - Minimum loan amount: R$ 3.000,00;
