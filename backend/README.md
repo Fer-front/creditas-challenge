@@ -21,7 +21,7 @@ __O que está sob avaliação?__
 
 Sua capacidade de analisar, projetar e codificar uma solução guiando-se com **Design Orientado a Objetos** e **Princípios de Orientação a Objetos**.
 
-Sinta-se à vontade para modificar/refatorar quaisquer aspectos das classes/métodos do arquivo `bootstrap` caso julgue necessário.
+Sinta-se à vontade para modificar/refatorar quaisquer aspectos das classes/métodos do arquivo `bootstrap` caso julgue necessário. Escolha o arquivo de bootstrap da linguagem que for mais familiar pra você, as opções que temos hoje são [bootstrap.py](https://github.com/Creditas/challenge/blob/master/backend/bootstrap.py), [bootstrap.rb](https://github.com/Creditas/challenge/blob/master/backend/bootstrap.rb), [bootstrap.kt](https://github.com/Creditas/challenge/blob/master/backend/bootstrap.kt).
 
 Por favor, inclua suas considerações da atividade em um arquivo de texto ou markdown.
 
