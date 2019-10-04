@@ -6,7 +6,7 @@ Este teste é apresentado aos candidatos as vagas de desenvolvedores mobile para
 
 ## O que é necessário fazer?
 
-Você deverá porototipar um aplicativo client do Github para acompanhar os projetos dos usuários do aplicativo.
+Você deverá prototipar um aplicativo client do Github para acompanhar os projetos dos usuários do aplicativo.
 Para isso é esperado que o usuário entre com seu login e senha para se autenticar nas APIs do Github.
 Após a autenticação deverão ser listados os repositórios existentes desse usuário e ao selecionar um repositório, deverá ser exibida uma listagem com os commits desse dado repositório, ordenado por data.
 
@@ -38,4 +38,3 @@ Para nos enviar seu código, você pode:
 
 - Fazer um fork desse repositório, e nos mandar uma pull-request.
 - Dar acesso ao seu repositório privado no [Gitlab](http://gitlab.com/) para o usuário creditaschallenge.
-
