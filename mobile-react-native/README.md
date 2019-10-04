@@ -18,10 +18,13 @@ Para o desafio esperamos um aplicativo client do Github que contem as seguintes 
 - Listagem de repositórios (https://developer.github.com/v3/repos/)
 - Listagem de commits do repositório (https://developer.github.com/v3/repos/commits/)
 
-<img style="display: block; margin: 0 auto;" src="./wiremock/login1.png">
-<img style="display: block; margin: 0 auto;" src="./wiremock/login2.png">
-<img style="display: block; margin: 0 auto;" src="./wiremock/repositories.png">
-<img style="display: block; margin: 0 auto;" src="./wiremock/commits.png">
+### Exemplo
+
+.
+  <img style="display: block; margin: 0;" src="./wiremock/login1.png" width="200">
+  <img style="display: block; margin: 0;" src="./wiremock/login2.png" width="200">
+  <img style="display: block; margin: 0;" src="./wiremock/repositories.png" width="200">
+  <img style="display: block; margin: 0;" src="./wiremock/commits.png" width="200">
 
 ## Apresentação
 
