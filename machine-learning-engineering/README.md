@@ -89,7 +89,7 @@ We want you to implement everything that is shown in red in the architecture fig
 - **[4]** Build the metrics data transport from `credit-analyzer` to `model-monitor` applications
     - If you decided to use an external data storage tool, include it in the `docker-compose`;
     - Modify the `credit-analyzer` application (written in `python`) to send/push/write/provide the metrics.
-- **[5 and 6]** Build from scratch (this is mandatory) the `model-monitor` application using **java or kotlin**, it should:
+- **[5 and 6]** Build from scratch the `model-monitor` application using _preferably_ **java or kotlin**, it should:
     - Get metrics data;
     - Process and/or aggregate it;
     - Trigger alerts if the metrics represent a change in behavior of the model.
@@ -107,6 +107,10 @@ Provide your solution in a single **`docker-compose`** environment, including th
 
 ### How to deliver your solution
 Create a private GitHub repository and grant access to the user `challenge-dadinho`. Please also reply to the original email with the link to this page informing you submitted your solution.
+
+### How to start
+Download this folder, and, inside your local copy, run the following command:
+`(cd credit-analyzer; docker-compose up)`
 
 ## Hints about us
 
