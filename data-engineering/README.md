@@ -122,7 +122,7 @@ We expect you to understand the data, how the datasets fit together and how to b
 
 ### How to deliver your solution
 
-Create a github private repository and grant access to the user `challenge-dadinho` and `marcionetov`. Please also reply the original e-mail with the link to this page informing you submitted your solution.
+Create a github private repository and grant access to the user `marcionetov`. Please also reply the original e-mail with the link to this page informing you submitted your solution.
 
 ## Hints about us
 
