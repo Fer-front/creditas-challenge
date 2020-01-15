@@ -1,5 +1,4 @@
 import numpy as np
-import pandas as pd
 import pickle
 import json
 from flask import Flask, request
@@ -19,15 +18,16 @@ app = Api(app=flask_app,
           description='Api to analyse customer credit')
 
 name_space = app.namespace('api/v1/credit-analyzer',
-                           description='Given a customer profile, returns the probability of the customer having the credit approved and the status of the credit analysis')
+                           description='Given a customer profile, returns the probability of the customer having the '
+                                       'credit approved and the status of the credit analysis')
 
 with open('./random_forest.pkl', 'rb') as pickle_file:
     clf = pickle.load(pickle_file)
 
 
-def main(host, port):
+def main(app_host, app_port):
     print('starting flask application', file=sys.stderr)
-    flask_app.run(host=host, port=port)
+    flask_app.run(host=app_host, port=app_port)
 
 
 @name_space.route("/")
@@ -38,7 +38,8 @@ class CreditAnalyzer(Resource):
                      'education-level-bachelor': 'indicates if customer has bachelor degree (0 or 1)',
                      'education-level-high-school': 'indicates if customer has high school degree (0 or 1)',
                      'education-level-illiterate': 'indicates if the customer is illiterate (0 or 1)',
-                     'education-level-master-or-doctoral': 'Indicates if the customer has masters or doctoral degree (0 or 1)',
+                     'education-level-master-or-doctoral': 'Indicates if the customer has masters or '
+                                                           'doctoral degree (0 or 1)',
                      'professional-type-aposentado': 'indicates if the customer is retired (0 or 1)',
                      'professional-type-clt': 'indicates if customer has a formal job (clt) (0 or 1)',
                      'professional-type-freelancer': 'indicates if customer is freelancer (0 or 1)'})
