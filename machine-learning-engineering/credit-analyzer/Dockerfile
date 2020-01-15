@@ -1,17 +1,17 @@
-FROM kennethreitz/pipenv
+FROM python:latest
 
-RUN mkdir /home/app
+RUN pip install pipenv
+RUN mkdir -p /home/app
 
 COPY credit_analyzer.py /home/app
 COPY random_forest.pkl /home/app
 COPY credit_analyzer_rules.py /home/app
 COPY Pipfile /home/app
-COPY Pipfile /home/app
 
 WORKDIR /home/app
 RUN cd /home/app
 
-RUN pipenv install
+RUN pipenv install --skip-lock
 
 expose 8080
 
