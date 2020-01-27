@@ -1,4 +1,8 @@
-# Creditas Data Engineering Challenge
+# Creditas Analytics Data Engineering Challenge
+
+**AVISO SOBRE O TESTE SER EM INGLÊS**
+
+Esse teste está em inglês pois acreditamos que a **leitura** em inglês é parte do dia a dia das pessoas em tecnologia. Se você não domina totalmente a língua isso não é de forma alguma um problema. Se precisar de ajuda para esclarecer algum ponto que não ficou claro, não hesite em nos perguntar. :relaxed:
 
 ## Introduction
 
@@ -21,7 +25,7 @@ This challenge is about preparing data to analyze digital media effectivenes on 
 
 ### Creditas conversion funnel
 
-We can look at the path the customers goes from getting to know a company to converting into a customer as a funnel. It is a funnel because for each further step we look, we will progressively find less people involved. The following image illustrates a very simplified version of the conversion funnel we have here in Creditas.
+We can look at the path the customers goes from getting to know our company to converting into a customer as a multi-step process funnel. It is a funnel because for each further step we look, we will progressively find less people involved. The following image illustrates a very simplified version of the conversion funnel we have here at Creditas.
 
 ![conversion_funnel](conversion_funnel.png)
 
@@ -122,7 +126,7 @@ We expect you to understand the data, how the datasets fit together and how to b
 
 ### How to deliver your solution
 
-Create a github private repository and grant access to the user `acasimiro`. Please also reply the original e-mail with the link to this page informing you submitted your solution.
+Create a github private repository and grant access to the user `marcionetov`. Please also reply the original e-mail with the link to this page informing you submitted your solution.
 
 ## Hints about us
 
