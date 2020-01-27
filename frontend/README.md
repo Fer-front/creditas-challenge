@@ -68,7 +68,7 @@ Ao mudar o tipo de garantia no elemento `select`, o usuário deve ver as opçõe
 - Valor mínimo para empréstimo: R$ 30.000,00;
 - Valor máximo para empréstimo: R$ 4.500.000,00;
 - Prazos para imóvel : 120 / 180 / 240 meses;
-- Valor mínimo da garantia: R$ 5.000,00;
+- Valor mínimo da garantia: R$ 50.000,00;
 - Valor máximo da garantia: R$ 100.000.000,00;
 
 Por fim, você deve exibir o valor da parcela no campo correspondente a cada mudança nos inputs do formulário.
