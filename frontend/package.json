@@ -73,7 +73,7 @@
     "transformIgnorePatterns": [
       "/node_modules/"
     ],
-    "setupTestFrameworkScriptFile": "<rootDir>/config/setupTest.js",
+    "setupFilesAfterEnv": ["<rootDir>/config/setupTest.js"],
     "transform": {
       "^.+\\.js$": "babel-jest"
     },

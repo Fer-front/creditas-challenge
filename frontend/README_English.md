@@ -65,11 +65,15 @@ Please find the corresponding values below:
 - Minimum loan amount: R$ 3.000,00;
 - Maximum loan amount: R$ 100.000,00;
 - Terms: 24 / 36 / 48 months
+- Minimum guarantee amount: R$ 5.000,00;
+- Maximum guarantee amount: R$ 3.000.000,00;
 
 **Home**
 - Minimum loan amount: R$ 30.000,00;
 - Maximum loan amount: R$ 4.500.000,00;
 - Terms: 120 / 180 / 240 months
+- Minimum guarantee amount: R$ 50.000,00;
+- Maximum guarantee amount: R$ 100.000.000,00;
 
 Finally, you must update the monthly payment value whenever changes in the form's inputs are done.
 
