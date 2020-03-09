@@ -5,7 +5,7 @@
 Esse teste está em inglês pois acreditamos que a **leitura** em inglês é parte do dia a dia das pessoas em tecnologia. Se você não domina totalmente a língua isso não é de forma alguma um problema. Se precisar de ajuda para esclarecer algum ponto que não ficou claro, não hesite em nos perguntar. :relaxed:  
   
 ### Introduction
-  This is logic based test, so you don't need any complex tools installed, just a way to execute your favorite programming language. You're going to find 8 datasets related to Problem 1 and Problem 2 with inputs and outputs for both of them on the ***/in-outs***  folder . They're going to help you finish the task, just make sure your output is the same that the one we provided and voilà!  
+  This is a logic based test, so you don't need any complex tools installed, just a way to execute your favorite programming language. You're going to find 8 datasets related to Problem 1 and Problem 2 with inputs and outputs for both of them on the ***/in-outs***  folder . They're going to help you finish the task, just make sure your output is the same that the one we provided and voilà!  
     Important, try to be concise and clear, explain your logic with comments and if you cannot finish the test: **no problem!** Just write some of your thoughts on a readme.md and let us know what you think about it.
 
 ## Problem 1 - The message devourer
