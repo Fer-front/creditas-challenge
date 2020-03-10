@@ -1,59 +1,50 @@
 # Creditas Analytics Data Engineering Challenge
 
-**AVISO SOBRE O TESTE SER EM INGLÊS**
+### Introdução
+Este é um teste baseado apenas em lógica, com isso você não precisa de nenhuma ferramenta complexa instalada, somente um jeito de executar a sua linguagem de programação favorita. Você irá encontrar 8 datasets relacionados aos problemas 1 e 2 com suas entradas e saídas na pasta ***/in-outs***. Esses datasets irão te ajudar a completar sua tarefa, você só precisa ter certeza de que a saída do seu código está exatamente igual à saída fornecida e voilà!  
 
-Esse teste está em inglês pois acreditamos que a **leitura** em inglês é parte do dia a dia das pessoas em tecnologia. Se você não domina totalmente a língua isso não é de forma alguma um problema. Se precisar de ajuda para esclarecer algum ponto que não ficou claro, não hesite em nos perguntar. :relaxed:  
-  
-### Introduction
-  This is a logic based test, so you don't need any complex tools installed, just a way to execute your favorite programming language. You're going to find 8 datasets related to Problem 1 and Problem 2 with inputs and outputs for both of them on the ***/in-outs***  folder . They're going to help you finish the task, just make sure your output is the same that the one we provided and voilà!  
-    Important, try to be concise and clear, explain your logic with comments and if you cannot finish the test: **no problem!** Just write some of your thoughts on a readme.md and let us know what you think about it.
-
-## Problem 1 - The message devourer
-
-Creditas has two systems, a message Producer (P) and a message Consumer (C) that communicate through a queue (Q). The producer could post any number of messages on the queue at any time, and the only way they can leave the queue is by being consumed by C.
+## Problema 1 - O devorador de mensagens.
+A Creditas tem dois sistemas, um produtor de mensagens (P) e um consumidor de mensagens (C) que se comunicam através de uma fila (Q). O produtor pode postar qualquer número de mensagens na fila a qualquer momento, e a única forma dessas mensagens saírem da fila é sendo consumidas por C.
 <br />
 
-**Figure out the minimum number of messages that C could have consumed using two different methods of computation:**
+**Descubra o número mínimo de mensagens que C consumiu usando duas formas de processamento:**
 
-    Method 1 - Assume the consumer could consume any number of messages at any time.
-    Method 2 - Assume that, starting with the first time we look at the queue, C consumes the messages at  
-    a constant rate whenever there are messages on the queue. 
+    Método 1 - Assuma que nesse método, o consumidor pode consumir qualquer número de mensagens a qualquer momento.
+    Método 2 - Assuma que, a partir do primeiro momento que olhamos para a fila, C consome mensagens a uma taxa constante sempre que há mensagens na fila.
+    
+A entrada para o procesamento é um log contendo a quantidade de mensagens na fila em intervalos de 100-milissegundos.
+Por exemplo, se a entrada é 10 5 15 5, isso significa que no momento 0ms há 10 mensagens na fila, no momento 100ms há 5 mensagens na fila e assim por diante. (Isto é 15 aos 200ms e 5 aos 300ms).
 
+Análise: Com o primeiro método, C consumiu 15 mensagens para a entrada citada anteriormente: primeiro ele consome 5 mensagens, então mais 10 são postadas na fila, então ele consome mais 10. ***Não há outra maneira de consumo em que C consuma menos de 15 mensagens para o log acima.*** 
 
-The input is the log of the ammount of messages on the queue at 100-miliseconds intervals.
+Para o segundo método, C deve ter consumido pelo menos 25 mensagens. Podemos determinar que C consome mensagens a uma taxa de pelo menos uma mensagem a cada 10 milissegundos. Ele começa com 10 mensagens na fila. Nos primeiros 100 milissegundos, ele consome 10 mensagens, então 5 mensagens são postadas na fila. Nos próximos 50 milissegundos, ele consome 5 mensagens e então a fila permanece vazia nos outros 50 milissegundos, então P posta 15 novas mensagens na fila. Finalmente C consome 10 mensagens nos últimos 100 milissegundos, ao final ainda restam 5 mensagens em Q.
 
-For example, if the input is 10 5 15 5, it means that at the timestamp 0ms there were 10 messages on the queue, at timestamp 100ms there were 5 messages on the queue and so on (15 at 200ms and 5 at 300ms).
+### Entrada
 
-With the first method, C must have consumed at least 15 messages for the input above: first it consumes 5 messages, then 10 more are posted on the queue, then it consumes another 10. There's no way C could have consumed fewer messages.
+A primeira linha da entrada fornece o número de casos de teste, T. Então nas linhas seguintes se encontram T casos de teste. Cada um consistirá em uma linha contendo um único inteiro N, seguido por uma linha contendo N inteiros separados por espaço contendo o número de mensagens na fila Q no início e em intervalos de 100 milissegundos (mi).
 
-With the second method, C must have consumed at least 25 messages. We can determine that C consumes messages at a rate of at least 1 message per 10 miliseconds. It starts with 10 messages on the queue. In the first 100 miliseconds, it consumes 10 messages, and 5 more are posted on the queue. In the next 50 miliseconds, it consumes 5 messages, then the queue stays empty for 50 miliseconds, and then P posts 15 more messages on the queue. Then it consumes 10 messages in the last 100 miliseconds, at the end the queue will still have 5 messages.
+### Saída
 
-### Input
+Para cada caso de teste, imprima uma linha contendo "Caso #x: y z", em que x é o número do caso de teste (começando em 1), y é o número mínimo de mensagens que C poderia ter consumido usando o primeiro método de cálculo, e z é o número mínimo de mensagens que C poderia ter consumido usando o segundo método.
 
-The first line of the input gives the number of test cases, T. T test cases follow. Each will consist of one line containing a single integer N, followed by a line containing N space-separated integers mi; the number of messages on the queue Q at the start, and at 100-miliseconds intervals.
-
-### Output
-
-For each test case, output one line containing "Case #x: y z", where x is the test case number (starting from 1), y is the minimum number of messages C could have consumed using the first method of computation, and z is the minimum number of messages C could have consumed using the second method of computation.
-
-### Limits
+### Limites
 <br />1 ≤ T ≤ 100.
 <br />
-<br />Small dataset
+<br />Dataset pequeno
 <br />2 ≤ N ≤ 10.
 <br />0 ≤ mi ≤ 100.
 <br />
-<br />Large dataset
+<br />Dataset grande
 <br />2 ≤ N ≤ 1000.
 <br />0 ≤ mi ≤ 10000.
 
-### Sample
+### Exemplo
 
 
 <table border="0">
  <tr>
-    <td><b style="font-size:20px">Input</b></td>
-    <td><b style="font-size:20px">Output</b></td>
+    <td><b style="font-size:20px">Entrada</b></td>
+    <td><b style="font-size:20px">Saída</b></td>
  </tr>
  <tr>
     <td valign="top">
@@ -77,40 +68,39 @@ For each test case, output one line containing "Case #x: y z", where x is the te
 
 
 
-## Problem 2 - We're cheap, but fun!
+## Problema 2 - Somos econômicos, porém divertidos!
+Até o dia de hoje, a Creditas podia usar D diferentes templates de nós de computação para todas as suas aplicações (um template é um modelo de máquina pré definido com uma certa quantidade de núcleos de processamento, memória e armazenamento). Hoje, o principal midleware que adotamos restringe a quantidade de nós de cada template que as aplicações podem usar. Portanto, nossos engenheiros decidiram que nenhuma infraestrutura de aplicação pode usar mais do que C nós de cada um dos templates. Por exemplo, se C = 2 e os dois templates existentes tiverem 1 e 5 núcleos, é possível implantar uma aplicação que precise de 11 núcleos usando dois templates de 5 núcleos e um de 1 núcleo, ou uma aplicação que precise de 12 núcleos usando dois templates de 5 e dois de 1 núcleo, mas é impossível implantar uma aplicação que precise de 9 ou 17 núcleos (a quantidade de núcleos deve ser exata, não é permitido ter núcleos ociosos. Lembre-se, somos econômicos).
 
-Up until today, Creditas could use D different flavors of computing nodes for all applications (a flavor is a template of a computing node with a certain ammount of cores, memory and storage). Today, the main midleware we adopted restricted the number of nodes of each flavor the applications can use. So, our engineers decided that no more than C nodes of any flavor may be used by any application. For instance, if C = 2 and the two existing flavors have 1 and 5 cores, it is possible to deploy an application that needs 11 cores by using two 5s and one 1, or an application that needs 12 cores by using two 5s and two 1s, but it is impossible to have an application that needs 9 or 17 cores (the ammount of cores must be exact, it's not allowed to have idle cores. Remember, we're cheap).
+Infelizmente, agora você é o responsável por controlar os templates disponíveis. Uma boa notícia é: você pode solicitar novos templates ao cloud provider! Sua meta é tornar possível ***qualquer aplicação que precise de no máximo V núcleos ser implantada*** de acordo com as novas regras dos engenheiros. (Observe que isso pode não ter sido necessariamente possível antes da adoção do novo midleware). Além disso, você deseja introduzir o mínimo possível de novos templates, pois eles são muito caros e seu conjunto final de templates pré-existentes e novos pode não ter repetições.
 
-Sadly, now you are in charge of controlling the available flavors. A good thing is: you can order new flavors to the cloud provider! You want to make it possible for ***any application that needs at most V cores to be deployed*** under the engineers' new rules. (Note that this may not necessarily have been possible before the new midleware was adopted). Moreover, you want to introduce as few new flavors as possible because they're too expensive, and your final combined set of pre-existing and new flavors may not have any repeats.
-
-**What is the smallest number of new flavors you need to request?**
+**Qual é o menor número de templates que você precisa requisitar para que seja possível implantar qualquer aplicação com no máximo V núcleos?**
 
 <br />
 
-### Input
-The first line of the input gives the number of test cases, T. T test cases follow. Each consists of one line with three space-separated values C, D, and V, followed by another line with D distinct space-separated values representing the number of cores on the preexisting available flavors, in ascending order.
+### Entrada
+A primeira linha da entrada fornece o número de casos de teste, T. A seguir se encontram T casos de teste. Cada um consiste em uma linha com três valores separados por espaço C, D e V, seguidos por outra linha com D valores distintos separados por espaço, representando o número de núcleos nos templates disponíveis preexistentes, em ordem crescente.
 
-### Output
-For each test case, output one line containing "Case #x: y", where x is the test case number (starting from 1) and y is the minimum number of new flavors required, as described above.
+### Saída
+Para cada caso de teste, imprima uma linha contendo "Caso #x: y", em que x é o número do caso de teste (começando em 1) e y é o número mínimo de novos templates necessários, conforme descrito acima.
 
-### Limits
+### Limites
 1 ≤ T ≤ 100.
-<br />Each existing denomination ≤ V.
-<br /><br />Small dataset
+<br />Número de núcleos dos templates já existentes ≤ V.
+<br /><br />Dataset pequeno
 <br />C = 1.
 <br />1 ≤ D ≤ 5.
 <br />1 ≤ V ≤ 30.
-<br /><br />Large dataset
+<br /><br />Dataset grande
 <br />1 ≤ C ≤ 100.
 <br />1 ≤ D ≤ 100.
 <br />1 ≤ V ≤ 109.
 
-### Sample
+### Exemplo
 
 <table border="0">
  <tr>
-    <td><b style="font-size:20px">Input</b></td>
-    <td><b style="font-size:20px">Output</b></td>
+    <td><b style="font-size:20px">Entrada</b></td>
+    <td><b style="font-size:20px">Saída</b></td>
  </tr>
  <tr>
     <td valign="top">
@@ -133,8 +123,12 @@ For each test case, output one line containing "Case #x: y", where x is the test
  </tr>
 </table>
 
-In Case #1, it is already possible to deploy any application, because the required number of cores (1, 2, and 3) can be achieved by using at most one copy of each of the existing flavors (flavors with 1 and 2 cores).
-
-In Case #2, it suffices to add a flavor of either 3 or 4 cores -- whichever you choose, only one new flavor is required.
-
-In Case #3, the optimal solution is to add a flavor of 1 core.
+No Caso #1, já é possível realizar o deploy de qualquer aplicação, porque o número necessário de núcleos (1, 2 e 3) pode ser gerado usando no máximo 1 de cada um dos templates disponíveis:<br />
+    Aplicação de 1 núcleo = 1x 1 núcleo<br />
+    Aplicação de 2 núcleos =  1x 2 núcleos<br />
+    Aplicação de 3 núcleos =  1x 1 núcleo + 1x 2 núcleos<br />
+<br />
+No Caso #2, basta adicionar um template com 3 ou 4 cores -- qualquer que seja o escolhido, somente 1 novo template é necessário.
+<br />
+<br />
+No Caso #3, a solução ideal é adicionar um template de 1 núcleo.
