@@ -1,4 +1,4 @@
-# Creditas Analytics Data Engineering Challenge
+# Creditas Data Engineering Challenge
 
 ### Introdução
 Este é um teste baseado apenas em lógica, com isso você não precisa de nenhuma ferramenta complexa instalada, somente um jeito de executar a sua linguagem de programação favorita. Você irá encontrar 8 datasets relacionados aos problemas 1 e 2 com suas entradas e saídas na pasta ***/in-outs***. Esses datasets irão te ajudar a completar sua tarefa, você só precisa ter certeza de que a saída do seu código está exatamente igual à saída fornecida e voilà!  
