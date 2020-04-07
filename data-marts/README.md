@@ -48,7 +48,7 @@ This dataset contains ad campaign costs from Google Ads Platform.
 
 Sample:
 
-![google](google_ads.png)
+![google](google_ads_.png)
 
 **2. facebook_ads_media_costs**
 
