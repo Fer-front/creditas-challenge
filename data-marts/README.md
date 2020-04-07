@@ -28,7 +28,7 @@ This challenge is about preparing data to analyze digital media effectiveness on
 
 We can look at the path the customers go from getting to know our company to converting into a customer as a multi-step process funnel. It is a funnel because for each further step we look, we will progressively find less people involved. The following image illustrates a very simplified version of the conversion funnel we have here at Creditas.
 
-<inserir imagem>
+![funnel](conversion_funnel.png)
 
 Initially the customer is unaware of our product, the goal of digital marketing is attract potential customers into the conversion funnel. After the customer fills out a lead form (that means he/she is interested), we will run the credit analysis and then formalize the operation signing the contract.
 
@@ -42,37 +42,37 @@ The operation may not be completed by many reasons, such as:
 
 There are 4 different datasets to handle and integrate. They are all made up, it's not real data.
 
-1. google_ads_media_costs
+**1. google_ads_media_costs**
 
 This dataset contains ad campaign costs from Google Ads Platform.
 
 Sample:
 
-<inserir imagem>
+![google](google_ads.png)
 
-2. facebook_ads_media_costs
+**2. facebook_ads_media_costs**
 
 This dataset contains ad campaign costs from Facebook Ads Platform. It is very similar to the previous, but does not provide the ad creative id information.
 
 Sample:
 
-<inserir imagem>
+![facebook](facebook_ads.png)
 
-3. pageviews.txt
+**3. pageviews.txt**
 
 This file comes from the web server logs and provides pageviews information about a customer visiting our website. It is a purely text file so to extract information from it you have to parse each line and capture just what is needed.
 
 Sample:
  
-<inserir imagem>
+![pageviews](pageviews.png)
 
 From the URL address you can find the ad_creative_id and the campaign_id. Also the referer indicates where it came from, whether from Google Ads (http://google.com.br), Facebook Ads (http://www.facebook.com) or organic traffic (anything else).
 
-4. customer_leads_funnel
+**4. customer_leads_funnel**
 
 This dataset contains data about leads.
 
-<inserir imagem>
+![leads](customer_leads_funnel.png)
 
 Keep in mind that "lead" is an interested person, which may or may not become a customer. The lead becomes a customer when he/she signs the contract.
 
@@ -105,7 +105,7 @@ You will receive an invite email to edit this model in the https://coggle.it/ we
 
 A dashboard like the image below will be available for you to edit as you wish:
 
-<insert image>
+![dash](dash.png)
 
 You will design this simplified data model in front of a small audience. 
 
