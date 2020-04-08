@@ -99,7 +99,7 @@ The digital marketing team is a highly data driven and results oriented team. Th
 
 ## How to deliver your solution
 
-Please send us a Google or Microsoft email so that we can share with you a mind map template in which you will design a simplified dimensional data model for the challenge proposed.
+We will share with you a mind map template in which you will design a simplified dimensional data model for the challenge proposed.
 
 You will receive an invite email to edit this model in the https://coggle.it/ website. 
 
