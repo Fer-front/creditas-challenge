@@ -81,7 +81,7 @@ Esse arquivo representa uma réplica da tabela analítica existente na nossa inf
 | device_id  | lead_id   | registered_at       | credit_decision | credit_decision_at  | signed_at           | revenue  |
 | ---------- | --------- | ------------------- | --------------- | ------------------- | ------------------- | -------- |
 | 3HTZRCZdLc | 578419657 | 2018-10-01 00:00:50 | A               | 2018-10-05 19:37:50 |                     |          |
-| Mr35TsBJtE | 581565131 | 2018-10-01 00:10:22 | D               | 2018-10-01 10:17:22 |                     |          |
+| Mr35TsBJtE | 581565131 | 2018-10-01 00:10:22 | N               | 2018-10-01 10:17:22 |                     |          |
 | 1ZBFWuW5Qd | 100080974 | 2018-10-01 01:32:12 | A               | 2018-10-04 21:00:12 | 2018-10-07 01:59:12 | 19340.61 |
 
 Tenha em mente que *"lead"* é uma pessoa interessada, que pode ou não se tornar um clieFeshonte. Um *lead* torna-se um cliente quando assina o contrato.
@@ -90,7 +90,7 @@ Atente-se que na coluna *`credit_decision`*, um `A` representa ***Aprovado*** e 
 
 ### O que os usuários precisam responder
 
-O time de marketing digital é altamente *data-driven* e orientado a resultados. Eles precisam que você prepare o banco de dados/tabelas analíticas onde eles poderão executar queries para responder as seguintes questões:
+O time de marketing digital é altamente *data-driven* e orientado a resultados. Eles precisam que você prepare o banco de dados contendo tabelas analíticas onde eles poderão executar queries para responder as seguintes questões:
 
 1. Qual foi a campanha mais cara?
 2. Qual foi a campanha mais lucrativa?
@@ -109,5 +109,5 @@ Nós esperamos que você entenda os dados, como eles se relacionam entre si e qu
 
 ### Como entregar a sua solução
 
-Crie um repositório privado no GitHub e conceda acesso ao usuário: *`marcionetov`*.
+Crie um repositório privado no GitHub e conceda acesso ao usuário: `marcionetov`.
 Também responda o e-mail original com o link da sua solução informando que você concluiu o teste.
