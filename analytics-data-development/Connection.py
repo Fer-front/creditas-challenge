@@ -21,7 +21,7 @@ class Connection():
         :param create_table_sql: o comando SQL
         """
         try:
-            c = self.conn.cursor()
+            c = conn.cursor()
             c.execute(sql)
         except Error as e:
             print(e)
