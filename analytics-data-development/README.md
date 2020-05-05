@@ -8,10 +8,6 @@ O desafio consiste em representar uma tarefa que faz parte do nosso cotidiano e 
 
 ## O Problema: Eficiência de Marketing Digital
 
-### Um resumo sobre marketing digital
-
-Marketing Digital são todas as formas de atrair novos clientes usando ferramentas online, como: facebook, google, LinkedIn, entre outras. Todas essas plataformas requerem pagamentos enquanto exibem produtos *- em forma de anúncios -* aos potenciais consumidores. Em resumo, marketing digital é como o marketing tradicional mas utiliza mídias digitais ao invés de mídias físicas. Há também uma diferença importante: Com mídias digitais é possível acompanhar o engajamento do usuário e ajustar a estratégia, otimizando assim o investimento em Marketing.
-
 Esse desafio trata-se de como preparar os dados para analisar a efetividade do Marketing Digital na Creditas. Se você não conhece Marketing digital: tá tudo bem! Você não precisa desse conhecimento para concluir o nosso teste. Abaixo listamos alguns dos principais conceitos de marketing digital:
 
 - ***Campaign***: Uma campanha de marketing é um conjunto de ações publicitárias que tem o intuito de impactar um grupo específico de potenciais clientes;
@@ -100,7 +96,7 @@ O time de marketing digital é altamente *data-driven* e orientado a resultados.
 ### O que você precisa fazer
 
 Usando `python` e outras ferramentas de sua escolha:
- - Fazer a ingestão dos dados em um banco de dados;
+ - Fazer a ingestão dos dados em um banco de dados (*para facilitar, criamos um arquivo Connection.py que utiliza SQLite em um banco de dados local, mas caso deseje pode utilizar o banco de dados de sua preferência*);
  - Gerar uma tabela para responder as questões acima;
  - Escrever 4 queries em SQL no seu README que respondam cada uma das questões acima;
  - Explicar como executar a sua solução.

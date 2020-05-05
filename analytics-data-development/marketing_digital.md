@@ -1,0 +1,3 @@
+### Um resumo sobre marketing digital
+
+Marketing Digital são todas as formas de atrair novos clientes usando ferramentas online, como: facebook, google, LinkedIn, entre outras. Todas essas plataformas requerem pagamentos enquanto exibem produtos *- em forma de anúncios -* aos potenciais consumidores. Em resumo, marketing digital é como o marketing tradicional mas utiliza mídias digitais ao invés de mídias físicas. Há também uma diferença importante: Com mídias digitais é possível acompanhar o engajamento do usuário e ajustar a estratégia, otimizando assim o investimento em Marketing.
