@@ -2,9 +2,9 @@
 
 ## Introdução
 
-Olá! We're glad to know you intend to work with us in the Creditas Data Engineering team. It means a lot you're taking time to do this programming assignment! :smiley:
+Olá! Estamos felizes em saber que você pretende trabalhar conosco na equipe de Analytics Data Development da Creditas. Significa muito para nós você dispor do seu tempo para fazer esse desafio. :smiley:
 
-This challenge mimics a task we ourselves deal with on a daily basis and it was designed to asses your coding skills. We expect you to deliver a professional solution, taking into account correctness, performance and code organization. :nerd_face:
+O desafio consiste em representar uma tarefa que faz parte do nosso cotidiano e que foi pensada para analisar suas habilidades de programação e manipulação de dados. Esperamos que você nos forneça uma solução eficaz, levando em consideração a clareza, desempenho e organização do código. :nerd_face:
 
 ## O Problema: Eficiência de Marketing Digital
 
@@ -12,10 +12,10 @@ This challenge mimics a task we ourselves deal with on a daily basis and it was 
 
 Marketing Digital são todas as formas de atrair novos clientes usando ferramentas online, como: facebook, google, LinkedIn, entre outras. Todas essas plataformas requerem pagamentos enquanto exibem produtos *- em forma de anúncios -* aos potenciais consumidores. Em resumo, marketing digital é como o marketing tradicional mas utiliza mídias digitais ao invés de mídias físicas. Há também uma diferença importante: Com mídias digitais é possível acompanhar o engajamento do usuário e ajustar a estratégia, otimizando assim o investimento em Marketing.
 
-Esse desafio trata-se de como preparar os dados para analisar a efetividade do Marketing Digital na Creditas. Se você não conhece Marketing digital: tá tudo bem! Você não precisa ter conhecimento prévio em marketing digital para concluir o nosso teste. Abaixo listamos alguns dos principais conceitos de marketing digital:
+Esse desafio trata-se de como preparar os dados para analisar a efetividade do Marketing Digital na Creditas. Se você não conhece Marketing digital: tá tudo bem! Você não precisa ter conhecimento em marketing digital para concluir o nosso teste. Abaixo listamos alguns dos principais conceitos de marketing digital:
 
 - ***Campaign***: Uma campanha de marketing é um conjunto de ações publicitárias que tem o intuito de impactar um grupo específico de potenciais clientes;
- - ***Ad Creative***: Imagem ou vídeo que convém com a mensagem a ser divulgada;
+ - ***Ad Creative***: Imagem ou vídeo representando a mensagem a ser divulgada;
  - ***Ad Impressions***: Uma exibição de um anúncio a um potencial cliente;
  - ***Clicks***: Um clique em um anúncio que direciona o cliente ao site da empresa anunciante;
 
@@ -84,29 +84,30 @@ Esse arquivo representa uma réplica da tabela analítica existente na nossa inf
 | Mr35TsBJtE | 581565131 | 2018-10-01 00:10:22 | D               | 2018-10-01 10:17:22 |                     |          |
 | 1ZBFWuW5Qd | 100080974 | 2018-10-01 01:32:12 | A               | 2018-10-04 21:00:12 | 2018-10-07 01:59:12 | 19340.61 |
 
-Tenha em mente que *"lead"* é uma pessoa interessada, que pode ou não se tornar um cliente. Um *lead* torna-se um cliente quando assina o contrato.
+Tenha em mente que *"lead"* é uma pessoa interessada, que pode ou não se tornar um clieFeshonte. Um *lead* torna-se um cliente quando assina o contrato.
 
-Atente-se que na coluna *`credit_decision`*, um `A` representa ***Aprovado*** e um `D` representa ***Negado***. Além disso, você pode observar que mesmo que um cliente seja aprovado, ele pode desistir e não assinar o contrato; que, por sua vez, não gerará receita. 
+Atente-se que na coluna *`credit_decision`*, um `A` representa ***Aprovado*** e um `N` representa ***Negado***. Além disso, você pode observar que mesmo que um cliente seja aprovado, ele pode desistir e não assinar o contrato; que, por sua vez, não gerará receita. 
 
-### What the user needs to answer
+### O que os usuários precisam responder
 
-The digital marketing team is a highly data driven and results oriented team. They need you to prepare the analytical database/tables where they will perform queries to answer the following business questions:
+O time de marketing digital é altamente *data-driven* e orientado a resultados. Eles precisam que você prepare o banco de dados/tabelas analíticas onde eles poderão executar queries para responder as seguintes questões:
 
-1. What was the most expensive campaign?
-2. What was the most profitable campaign?
-3. Which ad creative is the most effective in terms of clicks?
-4. Which ad creative is the most effective in terms of generating leads?
+1. Qual foi a campanha mais cara?
+2. Qual foi a campanha mais lucrativa?
+3. Qual *ad creative* foi o mais eficiente com relação a cliques?
+4. Qual *ad creative* foi o mais eficiente com relação a geração de *leads*?
 
-### What you need to do
+### O que você precisa fazer
 
-Using `python` and other tools of your choice:
- - ingest the data in a database;
- - provide a single table ready to be used to answer the questions above;
- - provide 4 SQL queries in your README that are answers for each business question presented above;
- - explain how to reproduce your solution;
+Usando `python` e outras ferramentas de sua escolha:
+ - Fazer a ingestão dos dados em um banco de dados;
+ - Gerar uma tabela para responder as questões acima;
+ - Escrever 4 queries em SQL no seu README que respondam cada uma das questões acima;
+ - Explicar como executar a sua solução.
 
-We expect you to understand the data, how the datasets fit together and how to best store/represent data to the end data user.
+Nós esperamos que você entenda os dados, como eles se relacionam entre si e qual a melhor forma de armazenar e exibir esses dados para o usuário final.
 
-### How to deliver your solution
+### Como entregar a sua solução
 
-Create a github private repository and grant access to the user `marcionetov`. Please also reply the original e-mail with the link to this page informing you submitted your solution.
+Crie um repositório privado no GitHub e conceda acesso ao usuário: *`marcionetov`*.
+Também responda o e-mail original com o link da sua solução informando que você concluiu o teste.
