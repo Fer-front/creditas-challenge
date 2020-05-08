@@ -13,7 +13,7 @@ Aqui estão alguns dos principais conceitos de marketing digital:
 
 Podemos observar o caminho que os clientes passam de conhecer nossa empresa até a conversão em um cliente como um funil de processo de várias etapas. É um funil porque, a cada passo seguinte, encontraremos progressivamente menos pessoas envolvidas. A imagem a seguir ilustra uma versão muito simplificada do funil de conversão que temos aqui na Creditas.
 
-![conversion_funnel] (conversion_funnel.png)
+![conversion_funnel](conversion_funnel.png)
 
 Inicialmente, o cliente desconhece nosso produto, o objetivo do marketing digital é atrair clientes em potencial para o funil de conversão. Depois que o cliente preencher um formulário de lead (isso significa que ele / ela está interessado), executaremos a análise de crédito e formalizaremos a operação que assina o contrato.
 
