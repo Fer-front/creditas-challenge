@@ -4,10 +4,10 @@ O Marketing Digital visa atrair novos clientes usando ferramentas on-line, como 
 
 Aqui estão alguns dos principais conceitos de marketing digital:
 
- - *Campaign*: uma campanha de marketing é uma série de ações de publicidade coordenada destinadas a atingir um grupo específico de clientes em potencial;
- - *Ad Creative*: uma imagem ou vídeo gráfico que transmite a mensagem que está sendo anunciada;
- - *Ad Impressions*: uma única ocorrência de exibição de um anúncio para um cliente em potencial;
- - *Clicks*: um único clique no anúncio que leva o cliente ao site da empresa;
+ - *Campaign*: uma campanha de marketing é uma série de ações de publicidade coordenada destinadas a atingir um grupo específico de clientes em potencial;
+ - *Ad Creative*: uma imagem ou vídeo gráfico que transmite a mensagem que está sendo anunciada;
+ - *Ad Impressions*: uma única ocorrência de exibição de um anúncio para um cliente em potencial;
+ - *Clicks*: um único clique no anúncio que leva o cliente ao site da empresa;
 
 ### Funil de conversão Creditas
 
