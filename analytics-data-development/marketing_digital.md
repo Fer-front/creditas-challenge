@@ -18,6 +18,6 @@ Podemos observar o caminho que os clientes passam de conhecer nossa empresa até
 Inicialmente, o cliente desconhece nosso produto, o objetivo do marketing digital é atrair clientes em potencial para o funil de conversão. Depois que o cliente preencher um formulário de lead (isso significa que ele / ela está interessado), executaremos a análise de crédito e formalizaremos a operação que assina o contrato.
 
 A operação pode não ser concluída por vários motivos, como:
- - o cliente não é aprovado na análise de crédito;
- - o cliente é suspeito de ser uma fraude;
- - o cliente perde o interesse e sai do processo.
+- o cliente não é aprovado na análise de crédito;
+- o cliente é suspeito de ser uma fraude;
+- o cliente perde o interesse e sai do processo.
