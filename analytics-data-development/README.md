@@ -8,7 +8,7 @@ O desafio consiste em representar uma tarefa que faz parte do nosso cotidiano e 
 
 ## O Problema: Eficiência de Marketing Digital
 
-Esse desafio trata-se de como preparar os dados para analisar a efetividade do Marketing Digital na Creditas. Se você não conhece Marketing digital: tá tudo bem! Você não precisa desse conhecimento para concluir o nosso teste. Abaixo listamos alguns dos principais conceitos de marketing digital:
+Esse desafio trata-se de como preparar os dados para analisar a efetividade do Marketing Digital na Creditas. Se você não conhece Marketing digital: tá tudo bem! Você não precisa desse conhecimento para concluir o nosso teste, mas se tiver interesse você pode ler mais sobre o assunto [aqui](./marketing_digital.md). Abaixo listamos alguns dos principais conceitos de marketing digital:
 
 - ***Campaign***: Uma campanha de marketing é um conjunto de ações publicitárias que tem o intuito de impactar um grupo específico de potenciais clientes;
  - ***Ad Creative***: Imagem ou vídeo representando a mensagem a ser divulgada;
