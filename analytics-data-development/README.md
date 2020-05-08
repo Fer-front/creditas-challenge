@@ -8,12 +8,26 @@ O desafio consiste em representar uma tarefa que faz parte do nosso cotidiano e 
 
 ## O Problema: Eficiência de Marketing Digital
 
-Esse desafio trata-se de como preparar os dados para analisar a efetividade do Marketing Digital na Creditas. Se você não conhece Marketing digital: tá tudo bem! Você não precisa desse conhecimento para concluir o nosso teste. Abaixo listamos alguns dos principais conceitos de marketing digital:
+Esse desafio trata-se de como preparar os dados para analisar a efetividade do Marketing Digital na Creditas. Se você não conhece Marketing digital: tá tudo bem! Você não precisa desse conhecimento para concluir o nosso teste, mas se tiver interesse você pode ler mais sobre o assunto [aqui](./marketing_digital.md). Abaixo listamos alguns dos principais conceitos de marketing digital:
 
 - ***Campaign***: Uma campanha de marketing é um conjunto de ações publicitárias que tem o intuito de impactar um grupo específico de potenciais clientes;
  - ***Ad Creative***: Imagem ou vídeo representando a mensagem a ser divulgada;
  - ***Ad Impressions***: Uma exibição de um anúncio a um potencial cliente;
  - ***Clicks***: Um clique em um anúncio que direciona o cliente ao site da empresa anunciante;
+
+### O que você precisa fazer
+
+Usando `python` e outras ferramentas de sua escolha:
+ - Fazer a ingestão dos dados em um banco de dados (*para facilitar, criamos um arquivo Connection.py que utiliza SQLite em um banco de dados local, mas caso deseje pode utilizar o banco de dados de sua preferência*);
+ - Gerar uma tabela para consolidar esses dados e responder as questões do próximo item;
+ - Escrever 4 queries em SQL no seu README que respondam cada uma das questões abaixo:
+    1. Qual foi a campanha mais cara?
+    2. Qual foi a campanha mais lucrativa?
+    3. Qual *ad creative* foi o mais eficiente com relação a cliques?
+    4. Qual *ad creative* foi o mais eficiente com relação a geração de *leads*?
+ - Explicar como executar a sua solução.
+
+Nós esperamos que você entenda os dados, como eles se relacionam entre si e qual a melhor forma de armazenar e exibir esses dados para o usuário final.
 
 ### Os dados
 
@@ -83,25 +97,6 @@ Esse arquivo representa uma réplica da tabela analítica existente na nossa inf
 Tenha em mente que *"lead"* é uma pessoa interessada, que pode ou não se tornar um clieFeshonte. Um *lead* torna-se um cliente quando assina o contrato.
 
 Atente-se que na coluna *`credit_decision`*, um `A` representa ***Aprovado*** e um `N` representa ***Negado***. Além disso, você pode observar que mesmo que um cliente seja aprovado, ele pode desistir e não assinar o contrato; que, por sua vez, não gerará receita. 
-
-### O que os usuários precisam responder
-
-O time de marketing digital é altamente *data-driven* e orientado a resultados. Eles precisam que você prepare o banco de dados contendo tabelas analíticas onde eles poderão executar queries para responder as seguintes questões:
-
-1. Qual foi a campanha mais cara?
-2. Qual foi a campanha mais lucrativa?
-3. Qual *ad creative* foi o mais eficiente com relação a cliques?
-4. Qual *ad creative* foi o mais eficiente com relação a geração de *leads*?
-
-### O que você precisa fazer
-
-Usando `python` e outras ferramentas de sua escolha:
- - Fazer a ingestão dos dados em um banco de dados (*para facilitar, criamos um arquivo Connection.py que utiliza SQLite em um banco de dados local, mas caso deseje pode utilizar o banco de dados de sua preferência*);
- - Gerar uma tabela para responder as questões acima;
- - Escrever 4 queries em SQL no seu README que respondam cada uma das questões acima;
- - Explicar como executar a sua solução.
-
-Nós esperamos que você entenda os dados, como eles se relacionam entre si e qual a melhor forma de armazenar e exibir esses dados para o usuário final.
 
 ### Como entregar a sua solução
 
