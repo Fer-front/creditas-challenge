@@ -3,17 +3,17 @@ from sqlite3 import Error
 
 class Connection():
 
-    def criar_conexao(self, db_file):
+    def criar_conexao(db_file):
         """ Cria uma conexão no banco de dados no SQLite
         :param db_file: Nome do banco de dados
         """
-        self.conn = None
+        conn = None
         try:
-            self.conn = sqlite3.connect(db_file)
+            conn = sqlite3.connect(db_file)
             print('Banco de Dados criado')
         except Error as e:
             print(e)
-        return self.conn
+        return conn
 
     def executar(self, conn, sql):
         """ Executa um comando com um cursor
