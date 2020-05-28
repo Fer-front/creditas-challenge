@@ -1,43 +1,47 @@
 # Desafio Analytics Data Development
 
-## Introdução
+**AVISO SOBRE O TESTE SER EM INGLÊS**
 
-Olá! Estamos felizes em saber que você pretende trabalhar conosco na equipe de Analytics Data Development da Creditas. Significa muito para nós você dispor do seu tempo para fazer esse desafio. :smiley:
+Esse teste está em inglês pois acreditamos que a **leitura** em inglês é parte do dia a dia das pessoas em tecnologia. Se você não domina totalmente a língua isso não é de forma alguma um problema. Se precisar de ajuda para esclarecer algum ponto que não ficou claro, não hesite em nos perguntar. :relaxed:
 
-O desafio consiste em representar uma tarefa que faz parte do nosso cotidiano e que foi pensada para analisar suas habilidades de programação e manipulação de dados. Esperamos que você nos forneça uma solução eficaz, levando em consideração a clareza, desempenho e organização do código. :nerd_face:
+## Introduction
 
-## O Problema: Eficiência de Marketing Digital
+Hi! We're glad to know you intend to work with us in the Creditas Data Engineering team. It means a lot you're taking time to do this programming assignment! :smiley:
 
-Esse desafio trata-se de como preparar os dados para analisar a efetividade do Marketing Digital na Creditas. Se você não conhece Marketing digital: tá tudo bem! Você não precisa desse conhecimento para concluir o nosso teste, mas se tiver interesse você pode ler mais sobre o assunto [aqui](./marketing_digital.md). Abaixo listamos alguns dos principais conceitos de marketing digital:
+This challenge mimics a task we ourselves deal with on a daily basis and it was designed to asses your coding skills. We expect you to deliver a professional solution, taking into account correctness, performance and code organization. :nerd_face:
 
-- ***Campaign***: Uma campanha de marketing é um conjunto de ações publicitárias que tem o intuito de impactar um grupo específico de potenciais clientes;
- - ***Ad Creative***: Imagem ou vídeo representando a mensagem a ser divulgada;
- - ***Ad Impressions***: Uma exibição de um anúncio a um potencial cliente;
- - ***Clicks***: Um clique em um anúncio que direciona o cliente ao site da empresa anunciante;
+## The problem: digital media effectiveness
 
-### O que você precisa fazer
+This challenge is about preparing data to analyze digital media effectivenes on our business. If you know nothing about digital marketing that's fine, you're not supposed to and previous knowledge in this matter is not needed. If you do have interest, though, you can read more [here](./digital_marketing.md). Here are some of the key digital marketing concepts:
 
-Usando `python` e outras ferramentas de sua escolha:
- - Fazer a ingestão dos dados em um banco de dados (*para facilitar, criamos um arquivo Connection.py que utiliza SQLite em um banco de dados local, mas caso deseje pode utilizar o banco de dados de sua preferência*);
- - Gerar uma tabela para consolidar esses dados e responder as questões do próximo item;
- - Escrever 4 queries em SQL no seu README que respondam cada uma das questões abaixo:
-    1. Qual foi a campanha mais cara?
-    2. Qual foi a campanha mais lucrativa?
-    3. Qual *ad creative* foi o mais eficiente com relação a cliques?
-    4. Qual *ad creative* foi o mais eficiente com relação a geração de *leads*?
- - Explicar como executar a sua solução.
+ - ***Campaign***: a marketing campaign is a series of coordinated advertising actions intended to target a specific group of potential customers;
+ - ***Ad Creative***: a graphical image or video that conveys the message being advertised;
+ - ***Ad Impressions***: one single occurrence of displaying an ad to a potential customer;
+ - ***Clicks***: one single click on the ad that leads the customer to the company's website;
 
-Nós esperamos que você entenda os dados, como eles se relacionam entre si e qual a melhor forma de armazenar e exibir esses dados para o usuário final.
+### What you need to do
 
-### Os dados
+Using `python` and other tools of your choice:
+ - Ingest the data in a database (*to help you, we included a file (Connection.py) with a preconfigured SQLite local database, which doesn't require any previous setup. It's use is optional, meaning you're free to use other databases if you feel more confortable*);
+ - Provide a single table ready to be used to answer the questions above;
+ - Provide 4 SQL queries in your README that are answers for each of the following questions:
+    1. What was the most expensive campaign?
+    2. What was the most profitable campaign?
+    3. Which *ad creative* is the most effective in terms of clicks?
+    4. Which *ad creative* is the most effective in terms of generating *leads*?
+ - Explain how to reproduce your solution;
 
-Temos 4 diferentes datasets para manipular e integrá-los. Todos eles foram gerados: *não tratam-se de dados reais.*
+We expect you to understand the data, how the datasets fit together and how to best store/represent data to the end data user.
+
+### The data
+
+There are 4 different datasets to handle and integrate. *They are all made up, it's not real data.*
 
 #### `google_ads_media_costs.jsonl`
 
-Esse dataset exibe os custos de campanha do *Google Ads Platform*, contendo uma *String json* por linha.
+This dataset contains ad campaign costs from *Google Ads Platform*, one *json string* per line.
 
-Exemplo:
+Example:
 
 ```json
 {
@@ -54,9 +58,9 @@ Exemplo:
 
 #### `facebook_ads_media_costs.jsonl`
 
-Esse dataset exibe os custos de campanha do *Facebook Ads*, contendo uma *String json* por linha. É bem parecido com o anterior, porém sem o campo *ad_creative_id*.
+This dataset contains ad campaign costs from Facebook Ads Platform, one *json string* per line. It is very similar to the previous, but *does not provide the ad creative id* information.
 
-Exemplo:
+Example:
 
 ```json
 {
@@ -71,9 +75,9 @@ Exemplo:
 
 #### `pageviews.txt`
 
-Esse arquivo vem do servidor web e contém informações sobre a visita do cliente ao nosso site. É um arquivo de texto onde deve-se extrair as informações analisando cada linha e capturando apenas o necessário.
+This file comes from the webserver logs and provide pageviews information about a customer visiting our website. It is a purely text file so to extract information from it you have to parse each line and capture just what is needed.
 
-Exemplo:
+Example:
 
 ```txt
 203.0.181.219 - [2018-10-01 00:00:00] "GET / HTTP/1.1" 200 http://www.creditas.com.br/emprestimo-com-garantia?ad_creative_id=20003&campaign_id=1002 | device_id: mmRe2Qts07 | referer: http://google.com.br
@@ -82,23 +86,22 @@ Exemplo:
 
 ```
 
-No endereço da URL você pode encontrar o *`ad_creative_id`* e o *`campaign_id`*. Também encontra-se o *`referer`* que indica de onde o cliente veio, podendo ser: *Google Ads* (`http://google.com.br`), *Facebook Ads* (`http://www.facebook.com`) ou tráfego orgânico (qualquer coisa).
+From the URL address you can find the *`ad_creative_id`* and the *`campaign_id`*. The *`referer`* column indicates where it came from, whether from *Google Ads* (`http://google.com.br`), *Facebook Ads* (`http://www.facebook.com`) or organic traffic (anything else).
 
 #### `customer_leads_funnel.csv`
 
-Esse arquivo representa uma réplica da tabela analítica existente na nossa infra-estrutura.
+This file represents a copy of a analytical table that already exists in our environment.
 
 | device_id  | lead_id   | registered_at       | credit_decision | credit_decision_at  | signed_at           | revenue  |
 | ---------- | --------- | ------------------- | --------------- | ------------------- | ------------------- | -------- |
 | 3HTZRCZdLc | 578419657 | 2018-10-01 00:00:50 | A               | 2018-10-05 19:37:50 |                     |          |
-| Mr35TsBJtE | 581565131 | 2018-10-01 00:10:22 | N               | 2018-10-01 10:17:22 |                     |          |
+| Mr35TsBJtE | 581565131 | 2018-10-01 00:10:22 | D               | 2018-10-01 10:17:22 |                     |          |
 | 1ZBFWuW5Qd | 100080974 | 2018-10-01 01:32:12 | A               | 2018-10-04 21:00:12 | 2018-10-07 01:59:12 | 19340.61 |
 
-Tenha em mente que *"lead"* é uma pessoa interessada, que pode ou não se tornar um clieFeshonte. Um *lead* torna-se um cliente quando assina o contrato.
+Keep in mind that a *lead* is an interested person, which may or may not become a customer. The *lead* becomes a customer when he/she signs the contract.
 
-Atente-se que na coluna *`credit_decision`*, um `A` representa ***Aprovado*** e um `N` representa ***Negado***. Além disso, você pode observar que mesmo que um cliente seja aprovado, ele pode desistir e não assinar o contrato; que, por sua vez, não gerará receita. 
+Please note that in the column *credit_decision*, an `A` stands for ***Approved*** and a `D` stands for ***Denied***. Also, you will notice that even if a customer is approved he/she may give up and don't sign the contract; which, in turn, will generate no revenue.
 
-### Como entregar a sua solução
+### How to deliver your solution
 
-Crie um repositório privado no GitHub e conceda acesso ao usuário: `marcionetov`.
-Também responda o e-mail original com o link da sua solução informando que você concluiu o teste.
+Create a github private repository and grant access to the user `marcionetov`. Please also reply the original e-mail with the link to this page informing you submitted your solution.
