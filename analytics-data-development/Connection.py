@@ -3,22 +3,22 @@ from sqlite3 import Error
 
 class Connection():
 
-    def criar_conexao(db_file):
-        """ Cria uma conexão no banco de dados no SQLite
-        :param db_file: Nome do banco de dados
+    def create_conecction(db_file):
+        """ Creates a conection on the SQLite database
+        :param db_file: Database name
         """
         conn = None
         try:
             conn = sqlite3.connect(db_file)
-            print('Banco de Dados criado')
+            print('Database created')
         except Error as e:
             print(e)
         return conn
 
-    def executar(self, conn, sql):
-        """ Executa um comando com um cursor
-        :param conn: Objeto de conexão
-        :param create_table_sql: o comando SQL
+    def execute(self, conn, sql):
+        """ Executes a command with a cursor
+        :param conn: Connection object
+        :param sql: SQL command
         """
         try:
             c = conn.cursor()
