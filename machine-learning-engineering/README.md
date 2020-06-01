@@ -178,7 +178,7 @@ pd_iris
 
 ```python
 # replace target's number by labels in pd_iris
-def addLabel(x):
+def get_label(x):
     if x == 0:
         return 'setosa'
     elif x == 1:
@@ -186,7 +186,7 @@ def addLabel(x):
     else:
         return 'virginica'
     
-pd_iris['target'] = pd_iris['target'].apply(addLabel)
+pd_iris['target'] = pd_iris['target'].apply(get_label)
 pd_iris
 ```
 
