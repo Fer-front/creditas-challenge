@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from fastapi import APIRouter
-from iris.iris_classifier import classify_iris
+from iris_classifier import classify_iris
 
 app = FastAPI()
 router = APIRouter()

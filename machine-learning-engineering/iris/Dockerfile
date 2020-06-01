@@ -2,8 +2,9 @@ FROM python:3.7-slim-buster
 
 RUN apt-get update && apt-get install -y python3-dev build-essential pipenv jq
 
-RUN mkdir -p /usr/src/iris
 WORKDIR /usr/src/iris
+
+RUN mkdir -p /usr/src/iris
 
 COPY . .
 
@@ -13,6 +14,4 @@ RUN pip3 install -r requirements.txt
 
 EXPOSE 5000
 
-WORKDIR /usr/src
-
-CMD ["uvicorn", "--host", "0.0.0.0", "--port", "5000", "iris.app:app"]
+CMD ["uvicorn", "--host", "0.0.0.0", "--port", "5000", "app:app"]
