@@ -12,6 +12,4 @@ RUN jq -r '.default | to_entries[] | .key + .value.version' Pipfile.lock > requi
 
 RUN pip3 install -r requirements.txt
 
-EXPOSE 5000
-
-CMD ["uvicorn", "--host", "0.0.0.0", "--port", "5000", "app:app"]
+CMD ["gunicorn", "app:app", "-w", "4", "-b", ":8080", "-k", "uvicorn.workers.UvicornWorker"]

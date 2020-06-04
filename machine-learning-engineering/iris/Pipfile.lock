@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "39c96f894621fe39ff33dc5fe807bef42d93b338fe27a073a4d451d412d55ee6"
+            "sha256": "3f467469509683f8fc1591713f7887914db015c733fa475e879a3fce74aa3e77"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -30,6 +30,14 @@
             ],
             "index": "pypi",
             "version": "==0.55.1"
+        },
+        "gunicorn": {
+            "hashes": [
+                "sha256:1904bb2b8a43658807108d59c3f3d56c2b6121a701161de0ddf9ad140073c626",
+                "sha256:cd4a810dd51bf497552cf3f863b575dabd73d6ad6a91075b65936b151cbf4f9c"
+            ],
+            "index": "pypi",
+            "version": "==20.0.4"
         },
         "h11": {
             "hashes": [
@@ -62,6 +70,13 @@
                 "sha256:6825784ffda353cc8a1be573118085789e5b5d29401856b35b756645ab5aecb5"
             ],
             "version": "==0.15.1"
+        },
+        "newrelic": {
+            "hashes": [
+                "sha256:43dbaf5227b647c1b4b206064fc3367ac14f7b99ce38d11d50e82d49d21ccb76"
+            ],
+            "index": "pypi",
+            "version": "==5.12.1.141"
         },
         "numpy": {
             "hashes": [
