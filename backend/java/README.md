@@ -1,4 +1,4 @@
-## Desafio - Store
+## Desafio - Store (Pair Programming)
 
 Você está revisando as decisões de design de um software que processa Pedidos online - Store. Para esses pedidos são realizados pagamentos que recebem tratamentos a depender das situações específicas de cada tipo de produto, como segue:
 
