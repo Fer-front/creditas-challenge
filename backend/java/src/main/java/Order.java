@@ -28,6 +28,7 @@ public class Order {
         if (productAlreadyAdded.isPresent()) {
             throw new Exception("The product have already been added. Change the amount if you want more.");
         }
+
         items.add(new OrderItem(product, quantity));
     }
 
