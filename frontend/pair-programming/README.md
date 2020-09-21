@@ -58,10 +58,13 @@ Resultado: "1, 2 ... and 5"
 - `npm install`
 - `npm run test`
 
+
 **O que faremos nessa etapa?**
+
 Para o software em questão temos apenas o boilerplate da função e um teste dummy. Na entrevista, iremos juntas construir as regras pendentes. A idéia não é desenvolvermos todas as regras específicas, mas sim entender como trabalhamos em time durante uma dinâmica de pareamento.
 
 **Recadinhos**
+
 Sugerimos que você se certifique que a aplicação está executando normalmente (compilando e com o teste passando) antes de iniciarmos.
 
 Você pode utilizar o editor de texto de sua preferência. Recomendamos o [VSCode](https://code.visualstudio.com/).
