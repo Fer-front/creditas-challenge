@@ -12,7 +12,7 @@ Abaixo seguem as regras de negócio relacionadas a concessão de empréstimo de 
 |                          | Empréstimo pessoal | Empréstimo c/ garantia | Consignado |
 | ------------------------ | ------------------ | :--------------------: | ---------- |
 | Salario <= 3000          | Sim                |       Sim\*\*\*        | Não        |
-| Salario > 3000 e <= 5000 | Sim                |        Sim\*\*         | Não        |
+| Salario > 3000 e < 5000 | Sim                |        Sim\*\*         | Não        |
 | Salário => 5000          | Sim                |         Sim\*          | Sim        |
 
 - \* Clientes com menos de 30 anos

@@ -1,10 +1,13 @@
 public class Loan {
 
-    public String type() {
-        return null;
+    private String type;
+
+    public Loan(String type) {
+        this.type = type;
     }
 
-    public int interestRate() {
-        return 0;
+    public String type() {
+        return type;
     }
+
 }
