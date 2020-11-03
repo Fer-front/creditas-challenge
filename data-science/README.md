@@ -38,8 +38,8 @@ Utilizando um jupyter notebook, apresente a sua solução em python.
 
 ## Como entregar o desafio?
 Para nos enviar seu código, você pode:
-- Dar acesso ao seu repositório privado no [Gitlab](http://gitlab.com) para o usuário `creditaschallenge`.
-- Mandar um email para `ds-squad@creditas.com.br`
+- Comprimir os arquivos do seu desafio em formato `.zip` ou equivalente.
+- Mandar um email para `ds-squad@creditas.com.br`.
 
 
 ### Dicas
