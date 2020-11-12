@@ -15,6 +15,6 @@ class LoanMatcherTest {
         assertThat(availableLoans.size()).isEqualTo(1);
 
         assertThat(availableLoans.stream().findFirst().isPresent()).isTrue();
-        assertThat(availableLoans.get(0).type()).isEqualTo("EMPRESTIMO_PESSOAL");
+        assertThat(availableLoans.get(0).type()).isEqualTo("PERSONAL_LOAN");
     }
 }
