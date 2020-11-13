@@ -12,7 +12,7 @@ public class LoanMatcher {
         List<Loan> loans = new ArrayList<>();
 
         if (customer.income() <= 3000) {
-            loans.add(new Loan("EMPRESTIMO_PESSOAL"));
+            loans.add(new Loan("PERSONAL_LOAN"));
         }
 
         return loans;
