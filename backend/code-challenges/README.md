@@ -1,27 +1,27 @@
-# Desafio de Código
+# Code Challenge
 
-A proposta da aplicação que vamos desenvolver em conjunto é disponibilizar a uma pessoa as modalidades de empréstimo as quais ela tem acesso de acordo com algumas variáveis.
+The assessment proposal which we'll develop together is provide a person with the loan types suitable for her, given some variables:
 
-Devemos prover os seguintes modelos de empréstimo:
-Empréstimo pessoal. Taxa de juros: 4%
-Empréstimo com garantia com taxa de juros igual a 3%
-Consignado com taxa de juros igual a 2%
+We must provide the following loan types:
+Personal Loan. Interest Rate: 4%
+Collateralized Loan. Interest Rate: 3%
+Payroll Loan. Interest Rate: 2%
 
-Abaixo seguem as regras de negócio relacionadas a concessão de empréstimo de acordo com o perfil da pessoa:
+Listed below are the business rules for conceding a loan based on the person's profile:
 
-|                          | Empréstimo pessoal | Empréstimo c/ garantia | Consignado |
-| ------------------------ | ------------------ | :--------------------: | ---------- |
-| Salario <= 3000          | Sim                |       Sim\*\*\*        | Não        |
-| Salario > 3000 e < 5000  | Sim                |        Sim\*\*         | Não        |
-| Salário => 5000          | Sim                |         Sim\*          | Sim        |
+|                          | Personal Loan | Collateralized Loan | Payroll |
+| ------------------------ | ------------- | :-----------------: | ------- |
+| Income <= 3000           | Yes           |       Yes\*\*\*     | No      |
+| Income > 3000 & < 5000   | Yes           |        Yes\*\*      | No      |
+| Income => 5000           | Yes           |         Yes\*       | Yes     |
 
-- \* Clientes com menos de 30 anos
-- \*\* Clientes que residem em SP
-- \*\*\* Clientes com menos de 30 anos que residem em SP
+- \* Clients under 30 y.o.
+- \*\* Clients residing in SP (São Paulo state code in Brazil)
+- \*\*\* Clients under 30 y.o. residing in SP
 
-### Utilização da aplicação:
+### App usage:
 
-A aplicação deve receber como entrada essas informações:
+The application must receive the following data as input:
 
 ##### input
 
@@ -31,15 +31,15 @@ A aplicação deve receber como entrada essas informações:
     "name": "Erikaya",
     "cpf": "123.456.789-10",
     "age": 29,
-    "location": "BH",
+    "location": "SP",
     "income": 3000
   }
 }
 ```
 
-_Para fins de simplicidade, considere que vamos sempre receber os dados corretos (tipos e formatos)_
+_For the sake of simplicity, consider we'll always receive the correct data (types and formats)_
 
-E deve responder essas informações:
+And must respond the following data:
 
 ##### output
 
@@ -55,26 +55,26 @@ E deve responder essas informações:
 }
 ```
 
-### Observações:
+### Comments:
 
-- O escopo desse desafio será desenvolvido junto com tripulantes na entrevista de pairing
-- Precisamos que você traga para a entrevista um setup inicial da proposta de solução na linguagem que você preferir
-- Esse teste deve ser mantido em anonimato
+- The challenge scope will be developed alongside crew members during the pairing interview
+- We need you to bring for the interview an initial setup of the solution proposal with the preferred language
+- This assessment is confidential and must NOT be shared with other people than you and and our crew members
 
 # Setup
 
-- Instale as dependências
+- Install dependencies
 
 # Rode os testes
 
-Você pode executar o comando a seguir pelo CLI:
+You may execute the following command via CLI:
 
 ```bash
 $ ./gradlew test
 ```
 
-Se o teste estiverem falhando, então você teve sucesso. Nada tema!
+If tests are failing, then you succeeded. Fear nothing!
 
-Agora é só codar.
+Now it's all about coding.
 
-Boa sorte!
+Good luck!
