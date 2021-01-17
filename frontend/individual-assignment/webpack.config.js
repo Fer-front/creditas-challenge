@@ -17,16 +17,24 @@ module.exports = {
       template: 'public/index.html',
       filename: 'index.html',
       files: {
-        css: ['style.css']
+        scss: ['.style.scss']
       }
     })
   ],
   module: {
     rules: [
       {
-        test: /\.css$/,
-        use: ['style-loader', 'css-loader']
-      }
+        test: /\.scss$/,
+        exclude: /node_modules/,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+      },
     ]
   }
 }

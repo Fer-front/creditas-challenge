@@ -1,0 +1,13 @@
+.form{
+
+  @include sm {
+    min-width: 100%;
+    margin-bottom: 30px;
+  }
+
+  &__fields {
+    max-width: 400px;
+    min-width: 400px;
+
+  }
+}

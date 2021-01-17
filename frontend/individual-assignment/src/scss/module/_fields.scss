@@ -1,0 +1,46 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  & label {
+    color: $dove-gray;
+    font-weight: bold;
+    font-size: .8rem;
+    margin-bottom: 5px;
+  }
+
+  & select {
+    border:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -ms-appearance: none;
+  }
+
+  & select, & input[type="text"] {
+    color: $emperor;
+    border: 1px solid $nobel;
+    background-color: $alabaster;
+    border-radius: 4px;
+    padding: 10px 5px;
+    width: 150px;
+  }
+
+  & input[type="range"] {
+    transform: translateY(5px);
+  }
+
+  &-group {
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  &-group &:first-child {
+    margin-right: 30px;
+  }
+}
+
+
+
+
