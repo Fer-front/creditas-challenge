@@ -10,6 +10,3 @@ export default function watchPropsOn (el, callbackGet, callbackSet) {
     }
   })
 }
-
-// let elProxy = watchPropsOn(input)
-// elProxy.value = 'hi there';

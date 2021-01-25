@@ -52,8 +52,8 @@
                     <div class="range">
                       <input type="range" name="valor-garantia-range" id="valor-garantia-range" min="0" max="100" value="20" step="10">
                       <div class="range__values">
-                        <span>12.000</span>
-                        <span>24.000</span>
+                        <span id="min-garantia">12.000</span>
+                        <span id="max-garantia">24.000</span>
                       </div>
                     </div>
                   </div>
@@ -69,8 +69,8 @@
                     <div class="range">
                       <input type="range" name="valor-emprestimo-range" id="valor-emprestimo-range" min="0" max="100" value="90" step="10">
                       <div class="range__values">
-                        <span>30.000</span>
-                        <span>60.000</span>
+                        <span id="min-emprestimo">30.000</span>
+                        <span id="max-emprestimo">60.000</span>
                       </div>
                     </div>
                   </div>
@@ -82,19 +82,18 @@
               <div class="quota__container">
                 <h4>Valor da Parcela</h4>
                 <div class="quota">
-                  <strong>R$</strong>
-                  <span>465,00</span>
+                  <span id="valor_parcela">465,00</span>
                 </div>
               </div>
               <div class="amount_container">
                 <h4>Total a pagar</h4>
-                <p>R$ 11.112,00</p>
+                <p id="total_emprestimo">R$ 11.112,00</p>
               </div>
               <div class="tax__container">
                 <h4>Taxa de juros (mês)</h4>
-                <p>111,12%</p>
+                <p id="tax_juros">111,12%</p>
               </div>
-              <button class="button">
+              <button id="btn_submit" class="button">
                 Solicitar
               </button>
             </div>

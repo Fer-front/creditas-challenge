@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   mode: 'development',
-  entry: ['webpack/hot/dev-server', './src/index.js'],
+  entry: ['webpack/hot/dev-server', './src/credito.js'],
   output: {
     path: path.resolve(__dirname, 'build'),
     filename: 'bundle.js',

@@ -14,7 +14,7 @@
   File      |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
   ----------|----------|----------|----------|----------|-------------------|
   All files |    15.79 |        0 |     9.52 |    14.29 |                   |
-  index.js  |    15.79 |        0 |     9.52 |    14.29 |... 72,76,78,83,91 |
+  credito.js  |    15.79 |        0 |     9.52 |    14.29 |... 72,76,78,83,91 |
   ----------|----------|----------|----------|----------|-------------------|
   Jest: Uncovered count for statements (32)exceeds global threshold (10)
   Jest: "global" coverage threshold for branches (80%) not met: 0%
