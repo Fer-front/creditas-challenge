@@ -9,7 +9,7 @@ $media-mobile: 320px;
 }
 
 @mixin md {
-  @media (min-width: $media-tablet) and (max-width: $media-destop){
+  @media (min-width: $media-tablet) and (max-width: $media-desktop){
     @content;
   }
 }

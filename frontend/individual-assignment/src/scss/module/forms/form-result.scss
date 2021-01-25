@@ -1,7 +1,9 @@
 .form {
   @include sm {
-    width: 200px;
-    height: 250px;
+    &__result {
+      width: 200px;
+      height: 250px;
+    }
   }
 
   &__result {
