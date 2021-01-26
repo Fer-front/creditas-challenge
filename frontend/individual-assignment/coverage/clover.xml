@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1611081652234" clover="3.2.0">
+  <project timestamp="1611081652234" name="All files">
+    <metrics statements="82" coveredstatements="8" conditionals="6" coveredconditionals="0" methods="44" coveredmethods="3" elements="132" coveredelements="11" complexity="0" loc="82" ncloc="82" packages="5" files="13" classes="13"/>
+    <package name="src">
+      <metrics statements="31" coveredstatements="5" conditionals="4" coveredconditionals="0" methods="18" coveredmethods="2"/>
+      <file name="credito.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/credito.js">
+        <metrics statements="31" coveredstatements="5" conditionals="4" coveredconditionals="0" methods="18" coveredmethods="2"/>
+        <line num="6" count="2" type="stmt"/>
+        <line num="10" count="1" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="20" count="1" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="24" count="0" type="stmt"/>
+        <line num="25" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="39" count="0" type="stmt"/>
+        <line num="41" count="0" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="48" count="0" type="stmt"/>
+        <line num="50" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="51" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="53" count="0" type="stmt"/>
+        <line num="60" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="66" count="0" type="stmt"/>
+        <line num="67" count="0" type="stmt"/>
+        <line num="69" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="77" count="1" type="stmt"/>
+        <line num="78" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.js.core.credito">
+      <metrics statements="6" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="4" coveredmethods="0"/>
+      <file name="imovel.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/js/core/credito/imovel.js">
+        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+      <file name="credito.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/js/core/credito/credito.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="veiculos.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/js/core/credito/veiculos.js">
+        <metrics statements="3" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="10" count="0" type="stmt"/>
+        <line num="14" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.js.pages.creditos">
+      <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="credito.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/js/pages/creditos/credito.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.js.pages.creditos.froms">
+      <metrics statements="34" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="16" coveredmethods="1"/>
+      <file name="dom.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/js/pages/creditos/froms/dom.js">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="2" count="1" type="stmt"/>
+      </file>
+      <file name="fields.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/js/pages/creditos/froms/fields.js">
+        <metrics statements="33" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="15" coveredmethods="0"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="6" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+        <line num="11" count="0" type="stmt"/>
+        <line num="12" count="0" type="stmt"/>
+        <line num="13" count="0" type="stmt"/>
+        <line num="17" count="0" type="stmt"/>
+        <line num="19" count="0" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="27" count="0" type="stmt"/>
+        <line num="28" count="0" type="stmt"/>
+        <line num="30" count="0" type="stmt"/>
+        <line num="31" count="0" type="stmt"/>
+        <line num="34" count="0" type="stmt"/>
+        <line num="35" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="38" count="0" type="stmt"/>
+        <line num="42" count="0" type="stmt"/>
+        <line num="45" count="0" type="stmt"/>
+        <line num="49" count="0" type="stmt"/>
+        <line num="52" count="0" type="stmt"/>
+        <line num="57" count="0" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="63" count="0" type="stmt"/>
+        <line num="64" count="0" type="stmt"/>
+        <line num="68" count="0" type="stmt"/>
+        <line num="72" count="0" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="79" count="0" type="stmt"/>
+        <line num="80" count="0" type="stmt"/>
+        <line num="84" count="0" type="stmt"/>
+      </file>
+      <file name="credito.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/js/pages/creditos/froms/credito.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="result.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/js/pages/creditos/froms/result.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+    </package>
+    <package name="src.js.utils">
+      <metrics statements="11" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="6" coveredmethods="0"/>
+      <file name="createElement.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/js/utils/createElement.js">
+        <metrics statements="4" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="7" count="0" type="stmt"/>
+      </file>
+      <file name="credito.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/js/utils/credito.js">
+        <metrics statements="0" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      </file>
+      <file name="monetary.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/js/utils/monetary.js">
+        <metrics statements="2" coveredstatements="0" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="3" count="0" type="stmt"/>
+      </file>
+      <file name="watchPropsOn.js" path="/home/fernando/Área de Trabalho/challenge/frontend/individual-assignment/src/js/utils/watchPropsOn.js">
+        <metrics statements="5" coveredstatements="0" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="2" count="0" type="stmt"/>
+        <line num="4" count="0" type="stmt"/>
+        <line num="5" count="0" type="stmt"/>
+        <line num="8" count="0" type="stmt"/>
+        <line num="9" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>
