@@ -10,17 +10,17 @@ export const ID = {
   label_emprestimo_max: 'max-emprestimo',
 
   select_garantia: 'garantia',
-  select_parcelas: 'parcelas'
-}
+  select_parcelas: 'parcelas',
+};
 
-function registerElementForm () {
-  const element = {}
+function registerElementForm() {
+  const element = {};
 
   for (const idKey in ID) {
-    element[idKey] = document.getElementById(ID[idKey])
+    element[idKey] = document.getElementById(ID[idKey]);
   }
 
-  return element
+  return element;
 }
 
-export const el = registerElementForm()
+export const el = registerElementForm();

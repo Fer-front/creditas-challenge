@@ -1,15 +1,15 @@
-import './styles.scss'
-import init from './js/pages/creditos'
+import './main.scss';
+import init from './js/view/creditos';
 
 export default class CreditasChallenge {
-  static initialize () {
-    this.registerEvents()
+  static initialize() {
+    this.registerEvents();
   }
-  static registerEvents () {
-    init()
+  static registerEvents() {
+    init();
   }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-  CreditasChallenge.initialize()
-})
+  CreditasChallenge.initialize();
+});

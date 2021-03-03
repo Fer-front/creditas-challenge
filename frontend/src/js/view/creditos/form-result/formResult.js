@@ -1,5 +1,5 @@
 import el from './domElements'
-import taxas from '../../../core/credito/taxas'
+import taxas from '../../../constants/taxas'
 import formatCurrency from '../../../utils/formatCurrency'
 
 const checkFormValidity = formElement => formElement.checkValidity()
